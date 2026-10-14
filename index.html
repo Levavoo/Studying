@@ -1,0 +1,1689 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; font-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="theme-color" content="#183e32"><meta name="description" content="A connected, self-paced machine learning curriculum. Explore competencies, follow prerequisites and record evidence of understanding."><title>ML Atlas — Offline curriculum</title><style>:root{--bg:#f7f8f4;--paper:#fff;--ink:#203b32;--muted:#737e77;--line:#e1e6df;--green:#255943;--soft:#eaf0e7;--lime:#d9e9a8;--radius:13px}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.6 'DM Sans',Arial,sans-serif}button,input,select,textarea{font:inherit}button,a,input,select,textarea{-webkit-tap-highlight-color:transparent}button{cursor:pointer}a{color:inherit}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #8aaf58;outline-offset:3px}button:disabled{cursor:default;opacity:.55}.skip{position:fixed;top:-60px;left:20px;z-index:10;padding:12px;background:#fff}.skip:focus{top:12px}.sidebar{position:fixed;inset:0 auto 0 0;width:246px;background:#173c30;color:#f0f3e9;padding:32px 23px;display:flex;flex-direction:column;overflow-y:auto}.brand{display:flex;gap:11px;align-items:center;text-decoration:none;font:800 23px 'Manrope',sans-serif;letter-spacing:-.6px}.brand small{display:block;font:500 8px 'DM Sans',sans-serif;letter-spacing:1.5px;color:#a7bbad;margin-top:6px}.brandmark{font:600 34px Georgia,serif;background:#d9e9a8;color:#234b35;width:44px;height:46px;border-radius:13px;position:relative;text-align:center;line-height:47px}.brandmark span{position:absolute;font:15px Arial;right:4px;top:4px}.side-label{font-size:9px;letter-spacing:1.7px;color:#8fac9c;margin:44px 12px 12px}.subject-label{margin-top:30px}nav{display:grid;gap:5px}nav a{display:flex;gap:13px;align-items:center;padding:11px 13px;text-decoration:none;color:#c9d6cd;border-radius:8px;font-size:13px}nav a span{font-size:19px;width:18px;line-height:1}nav a.active{background:#315445;color:#f5f9ee}nav a:hover,.subject-link:hover{background:#294d3e}nav b{margin-left:auto;font-size:10px;font-weight:400;opacity:.7}.subject-link{width:100%;display:flex;align-items:center;gap:11px;border:0;color:#c9d6cd;background:transparent;padding:8px 13px;text-align:left;border-radius:8px;font-size:12px}.subject-link .dot{width:6px;height:6px;border-radius:50%;background:var(--color)}.sidebar-bottom{margin-top:auto;padding:36px 12px 0;font-size:12px;color:#c2d1c4}.sidebar-bottom strong{color:#eef3e6;font-size:13px}.sidebar-bottom p{font-size:11px;color:#99b29f;margin:6px 0 16px}.sidebar-bottom small{font-size:10px;color:#9bb5a3;display:block;margin-top:10px}.side-backup{display:block;border:0;background:transparent;color:#d7e2cb;padding:5px 0;font-size:11px}.workspace{margin-left:246px}.topbar{height:76px;padding:0 48px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.breadcrumb{font-size:10px;letter-spacing:1.5px;color:#8a948c}.breadcrumb b{color:#42584a;font-weight:500}.edition{font-size:9px;letter-spacing:1.4px;color:#738171}.edition i{font-style:normal;background:#e9edde;border:1px solid #dde4d3;border-radius:5px;padding:4px 6px;margin-left:6px}.mobile-brand{display:none}main{padding:40px 48px 25px;max-width:1550px;margin:auto;min-height:calc(100vh - 150px)}.eyebrow{font-size:10px;font-weight:700;letter-spacing:2px;color:#748268;margin:0 0 11px}.intro{display:flex;align-items:flex-end;justify-content:space-between;gap:22px;margin-bottom:28px}.intro h1{font:600 clamp(28px,3vw,41px)/1.2 'Manrope',sans-serif;letter-spacing:-1.4px;margin:0 0 12px}.intro p{margin:0;color:var(--muted);max-width:670px;font-size:13px}.pill{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);background:#fcfdf9;border-radius:20px;font-size:10px;padding:6px 12px;white-space:nowrap}.pill::before{content:'';width:5px;height:5px;background:#6c8a52;border-radius:50%}.hero{display:grid;grid-template-columns:1.35fr 1fr;background:var(--soft);border:1px solid #dce5d5;border-radius:var(--radius);overflow:hidden;margin-bottom:30px}.hero-left{padding:29px 31px}.hero h2{font:600 23px/1.3 'Manrope',sans-serif;margin:5px 0 9px;letter-spacing:-.6px}.hero p{font-size:12px;color:#5d705d;max-width:440px;margin:0 0 20px}.hero-right{position:relative;min-height:225px;display:flex;justify-content:center;align-items:center;background:radial-gradient(circle at 50% 40%,#edf3df 0,transparent 65%)}.orbit{position:relative;width:285px;height:200px}.orbit svg{position:absolute;inset:0;width:100%;height:100%}.orbit .center{position:absolute;left:108px;top:66px;width:72px;height:72px;display:grid;place-content:center;text-align:center;background:var(--green);color:white;border:7px solid #eaf0e7;box-shadow:0 0 0 1px #c8d8c3;border-radius:50%;font:700 19px Manrope,sans-serif}.orbit .center small{font:8px 'DM Sans';letter-spacing:1px}.orb{position:absolute;min-width:51px;text-align:center;font-size:10px;padding:6px 10px;background:#f8faf2;border:1px solid #cad8c1;border-radius:7px}.orb:nth-of-type(2){left:31px;top:28px}.orb:nth-of-type(3){right:24px;top:29px}.orb:nth-of-type(4){left:0;top:108px}.orb:nth-of-type(5){right:0;top:111px}.orb:nth-of-type(6){left:106px;bottom:0}.button{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;border:1px solid #cbd5c7;background:white;color:var(--green);border-radius:7px;padding:9px 14px;font-size:11px;font-weight:600}.button.primary{background:var(--green);border-color:var(--green);color:white}.button:hover{filter:brightness(.96)}.button-row{display:flex;gap:10px;flex-wrap:wrap}.section-head{display:flex;justify-content:space-between;align-items:center;margin:28px 0 15px;gap:16px}.section-head h2{margin:0;font:700 17px 'Manrope',sans-serif;letter-spacing:-.35px}.section-head small{font-size:11px;color:var(--muted)}.text-button{border:0;background:transparent;color:#53664d;font-size:11px;padding:5px 0}.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:27px}.stat{background:#fff;border:1px solid var(--line);border-radius:10px;padding:15px 18px}.stat strong{display:block;font:600 24px Manrope,sans-serif}.stat span{font-size:10px;color:var(--muted)}.stat .stat-line{height:3px;background:#edf0e9;margin-top:11px}.stat .stat-line i{display:block;height:100%;background:#739058}.subjects{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.subject-card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px;text-align:left;color:inherit;transition:transform .15s,border-color .15s}.subject-card:hover{transform:translateY(-2px);border-color:#b2c3a6}.card-top{display:flex;justify-content:space-between;align-items:center}.subject-icon{width:33px;height:33px;border-radius:9px;background:color-mix(in srgb,var(--color) 10%,white);color:var(--color);display:grid;place-items:center;font-size:11px;font-weight:700}.card-top>span:last-child{font-size:10px;color:#8d998c}.subject-card h3{font:700 13px Manrope,sans-serif;margin:12px 0 4px}.subject-card p{font-size:11px;line-height:1.5;color:var(--muted);margin:0 0 17px;min-height:32px}.track-line{height:4px;background:#edf0e8;border-radius:3px}.track-line i{display:block;height:100%;background:var(--color);border-radius:3px}.card-bottom{display:flex;justify-content:space-between;margin-top:8px;font-size:9px;color:#7a8676}.two-col{display:grid;grid-template-columns:1.35fr 1fr;gap:25px}.stage-list{border:1px solid var(--line);background:#fff;border-radius:11px;overflow:hidden}.stage-row{display:flex;align-items:center;width:100%;text-align:left;padding:14px 18px;border:0;background:transparent;color:inherit;gap:15px}.stage-row+.stage-row{border-top:1px solid #edf0e9}.stage-row:hover{background:#f5f8f0}.stage-num{font:12px Manrope,sans-serif;color:#7e906e;background:#f0f3eb;border:1px solid #e5eadc;border-radius:7px;width:30px;height:30px;display:grid;place-content:center;flex-shrink:0}.stage-row strong{display:block;font-size:11px;font-weight:600}.stage-row small{font-size:9px;color:#8b9687}.stage-row .arrow{margin-left:auto;color:#a0aa99}.note-card{background:#f0f0e6;border:1px solid #e4e4d5;padding:23px;border-radius:11px}.note-card .quote{font:22px/1.5 Georgia,serif;color:#536348;margin:5px 0 15px}.note-card p{font-size:12px;color:#7a826e}.mini-heading{font-size:9px;font-weight:700;letter-spacing:1.4px;color:#879177}.next-list{display:grid;gap:9px}.next-item{background:white;border:1px solid var(--line);border-radius:8px;padding:13px 14px;width:100%;text-align:left;color:inherit}.next-item strong{display:block;font-size:12px}.next-item small{color:var(--muted);font-size:10px}.next-item span{float:right;color:#859279}.filters{display:flex;gap:9px;flex-wrap:wrap;margin:22px 0 16px}.filters input,.filters select,.map-picker{background:white;border:1px solid var(--line);border-radius:7px;padding:10px 12px;color:#405647;font-size:12px}.filters input{flex:1;min-width:180px}.filters select{max-width:100%}.filters label{display:flex;align-items:center;gap:6px;font-size:11px;color:#6c786a}.filters label input{flex:none;min-width:auto}.filter-summary{color:#7e8a78;font-size:11px;display:flex;justify-content:space-between;margin:8px 0 20px}.curriculum-section{margin-bottom:25px}.curriculum-section>h2{display:flex;gap:12px;align-items:center;font:600 17px Manrope,sans-serif;margin-bottom:6px}.curriculum-section>p{font-size:12px;color:var(--muted);margin:0 0 14px}.topic-row{display:grid;grid-template-columns:33px 1fr auto;gap:13px;align-items:center;background:#fff;border:1px solid var(--line);margin-bottom:7px;border-radius:9px;padding:14px 17px;width:100%;text-align:left;color:inherit}.topic-row:hover{border-color:#aac19e;background:#fcfef9}.topic-row h3{font-size:12px;margin:0 0 4px;font-weight:600}.topic-row p{font-size:10px;color:var(--muted);margin:0}.topic-row .metadata{display:flex;gap:6px;align-items:center;flex-wrap:wrap;justify-content:flex-end}.badge{display:inline-block;border-radius:4px;background:#f1f3ed;color:#798571;padding:3px 7px;font-size:9px;white-space:nowrap}.badge.core{background:#eaf1df;color:#55703e}.badge.supporting{background:#edf1f8;color:#5f7395}.badge.specialization{background:#f0eaf6;color:#8b6ba0}.badge.optional{background:#f4efe4;color:#907b54}.status{color:#7a8973;font-size:10px}.status.demonstrated{color:#34623c}.status.practiced{color:#607b97}.empty{background:#fff;border:1px dashed #cbd7c1;border-radius:12px;padding:35px;text-align:center;color:#75846a}.empty h3{color:var(--ink)}.map-picker{width:100%;max-width:530px;margin:10px 0 22px}.connection-map{display:grid;grid-template-columns:1fr 1.1fr 1fr;gap:30px;align-items:center;background:#eef2e8;border:1px solid #dce4d3;padding:28px;border-radius:12px}.map-col{display:grid;gap:10px;min-width:0}.map-col h3{font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#78866d;margin:0 0 5px}.map-node{background:white;border:1px solid #cedbc1;border-radius:8px;padding:13px;text-align:left;font-size:11px;color:inherit;position:relative}.map-node small{display:block;font-size:9px;color:var(--muted);margin-top:4px}.map-node.focus{background:#255943;color:#fff;border:0;padding:24px 18px;font:600 17px/1.4 Manrope,sans-serif}.map-node.focus small{color:#c9dcb9;font:10px 'DM Sans',sans-serif;margin-top:8px}.map-center{position:relative}.map-center::before,.map-center::after{content:'→';position:absolute;color:#8ba179;top:50%;font-size:22px}.map-center::before{left:-25px}.map-center::after{right:-25px}.connection-legend{font-size:11px;color:#7b8972;margin:15px 0}.deeper-list{display:flex;flex-wrap:wrap;gap:8px}.resource-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.resource-card{border:1px solid var(--line);background:#fff;border-radius:11px;padding:22px}.resource-card .resource-kind{font-size:9px;text-transform:uppercase;letter-spacing:1.1px;color:#819173}.resource-card h3{font:700 15px Manrope,sans-serif;margin:10px 0}.resource-card p{font-size:12px;color:var(--muted)}.resource-card a{font-size:11px;font-weight:600;color:#476b38}.resource-card .uses{font-size:10px;color:#86917f;margin-top:14px}.guide-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.guide-card{background:#fff;border:1px solid var(--line);border-radius:11px;padding:24px}.guide-card h2{font:700 17px Manrope,sans-serif;margin:0 0 12px}.guide-card p,.guide-card li{font-size:12px;color:#687663}.guide-card ul,.guide-card ol{padding-left:19px}.guide-card li{margin:7px 0}.guide-card strong{color:#3f5737}footer{border-top:1px solid var(--line);padding:20px 48px;color:#7c8874;font-size:10px;display:flex;gap:20px}footer span{color:#a0a998}footer a{margin-left:auto;text-decoration:none}dialog{border:1px solid #d4dfcb;border-radius:16px;padding:0;color:var(--ink);background:#fbfcf8;width:min(730px,calc(100% - 32px));max-height:90vh;box-shadow:0 25px 90px #183e3233}dialog::backdrop{background:#163c3266;backdrop-filter:blur(4px)}.detail-header{padding:30px 34px 24px;background:#edf2e7;border-bottom:1px solid #dde5d5;position:relative}.close{position:absolute;right:16px;top:13px;width:33px;height:33px;background:#ffffff88;border:1px solid #d6dfce;border-radius:50%;color:#4c6740;font-size:23px;line-height:1}.detail-header h2{font:600 27px/1.25 Manrope,sans-serif;letter-spacing:-.7px;margin:13px 30px 10px 0}.detail-header p{color:#65765d;font-size:13px;margin:0}.detail-meta{display:flex;gap:8px;align-items:center;font-size:10px;color:#708263}.detail-body{padding:25px 34px 32px}.detail-section{margin:0 0 24px}.detail-section h3{font-size:12px;letter-spacing:.1px;margin:0 0 10px}.detail-section p{font-size:12px;color:#6c7966}.dependencies{display:flex;gap:7px;flex-wrap:wrap}.dependency{font-size:10px;border:1px solid #d8e0d1;background:#fff;border-radius:5px;padding:6px 8px;text-align:left;color:#526749}.dependency.ready{background:#edf5e5}.dependency span{color:#8a9781}.outcomes{list-style:none;padding:0;margin:0;display:grid;gap:9px}.outcomes li label{display:flex;align-items:flex-start;gap:9px;font-size:12px;color:#4d6246}.outcomes input{accent-color:var(--green);margin-top:4px;flex-shrink:0}.micro{font-size:10px!important;color:#86917e!important}.task{padding:18px;background:#f3f1e6;border:1px solid #e8e4d5;border-radius:9px}.task h3{color:#82744e}.task p{color:#6f705d;margin:5px 0 12px;font-size:12px;white-space:pre-wrap}.task details{border-top:1px solid #e2dfcf;padding-top:10px}.task summary{font-size:11px;cursor:pointer;color:#6b774e;font-weight:600}.resource-pin{border:1px solid var(--line);border-radius:8px;padding:15px;background:#fff}.resource-pin a{font-size:13px;font-weight:600;color:var(--green)}.resource-pin p{margin:6px 0;font-size:11px}.progress-controls{display:grid;grid-template-columns:1fr 1fr;gap:12px}.progress-controls label,.note-label{font-size:11px;font-weight:600;color:#5d7052;display:block}.progress-controls select{display:block;width:100%;margin-top:6px;border:1px solid #d6dfcf;border-radius:6px;padding:9px;background:#fff;color:#435b39;font-size:12px}textarea,.evidence-input{border:1px solid #d6dfcf;border-radius:7px;background:#fff;color:#3f5237;width:100%;padding:11px;margin-top:7px;font-size:12px;line-height:1.6}textarea{min-height:95px;resize:vertical}.note-label{margin-top:14px}.detail-bottom{border-top:1px solid var(--line);padding-top:16px;display:flex;align-items:center;justify-content:space-between;gap:12px}.save-note{font-size:10px;color:#819173}.import-content{padding:32px}.import-content h2{font:600 24px Manrope,sans-serif}.import-content p{font-size:13px;color:#6e7d65}#toast{position:fixed;bottom:25px;left:50%;transform:translate(-50%,20px);background:#244d39;color:white;padding:12px 20px;border-radius:9px;opacity:0;pointer-events:none;transition:.2s;z-index:100;font-size:12px;max-width:90vw}#toast.visible{opacity:1;transform:translate(-50%,0)}#storage-warning{color:#ffe2a7;font-size:10px;margin-top:10px}.review-note{padding:12px 15px;background:#f8f0df;border-radius:8px;color:#8a7445;font-size:11px;margin:12px 0}.only-mobile{display:none}
+@media(min-width:1500px){main{padding-top:48px}.subjects{gap:18px}.subject-card{padding:23px}.hero-left{padding:36px}.hero-right{min-height:245px}}
+@media(max-width:1150px){.sidebar{width:211px;padding:27px 16px}.workspace{margin-left:211px}main{padding:30px 28px}.topbar,footer{padding-left:28px;padding-right:28px}.hero{grid-template-columns:1.3fr 1fr}.hero-left{padding:24px}.hero-right .orbit{transform:scale(.82)}.subjects{gap:10px}.subject-card{padding:14px}.two-col{gap:16px}.topic-row .metadata .badge:last-of-type{display:none}}
+@media(max-width:850px){.sidebar{position:static;width:auto;padding:15px 20px;display:block}.brand{font-size:19px}.brandmark{width:32px;height:34px;font-size:27px;line-height:34px;border-radius:9px}.brand small{font-size:7px}.sidebar .side-label,.sidebar #subject-nav,.sidebar-bottom{display:none}nav{display:flex;margin-top:16px;gap:4px;overflow:auto}nav a{padding:7px 10px;font-size:11px;white-space:nowrap}nav a span{font-size:15px;width:auto}nav b{display:none}.workspace{margin-left:0}.topbar{height:48px}.hero-right{overflow:hidden}.intro h1{font-size:33px}.intro{align-items:flex-start}.pill{display:none}.hero h2{font-size:21px}.hero p{font-size:12px}.two-col{grid-template-columns:1.2fr 1fr}.connection-map{padding:20px;gap:22px}.map-center::before{left:-20px}.map-center::after{right:-20px}.map-node.focus{font-size:14px}}
+@media(max-width:600px){main{padding:25px 18px}.topbar{padding:0 20px}.intro h1{font-size:29px;letter-spacing:-1px}.hero{grid-template-columns:1fr}.hero-right{display:none}.hero-left{padding:24px}.stats-row{grid-template-columns:1fr 1fr;gap:9px}.stat{padding:12px 14px}.subjects{grid-template-columns:1fr 1fr}.subject-card p{min-height:48px}.two-col,.guide-grid,.resource-grid{grid-template-columns:1fr}.section-head h2{font-size:16px}.topic-row{grid-template-columns:28px 1fr;padding:13px 12px;gap:10px}.topic-row .subject-icon{width:28px;height:29px;font-size:9px}.topic-row .metadata{grid-column:2;justify-content:flex-start}.filters select{flex:1;min-width:125px}.filters input{flex-basis:100%}.filter-summary{font-size:10px}.connection-map{grid-template-columns:1fr;gap:28px}.map-center::before{content:'↓';left:50%;top:-28px}.map-center::after{content:'↓';left:50%;right:auto;top:auto;bottom:-28px}.map-col{gap:7px}.detail-header{padding:25px 20px 20px}.detail-header h2{font-size:23px}.detail-body{padding:20px}.progress-controls{gap:9px}.detail-bottom{align-items:flex-start;flex-direction:column}footer{padding:18px;gap:10px;flex-wrap:wrap}footer a{margin-left:0}footer span{margin-left:auto}.resource-card{padding:19px}.guide-card{padding:20px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style></head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<aside class="sidebar">
+<a class="brand" href="#overview"><span class="brandmark">a<span>↗</span></span><span>ML Atlas<small>A CONNECTED CURRICULUM</small></span></a>
+<div class="side-label">YOUR WORKSPACE</div>
+<nav id="nav" aria-label="Main navigation"><a href="#overview" data-view="overview"><span>◫</span> Overview</a><a href="#curriculum" data-view="curriculum"><span>▤</span> Curriculum <b id="topic-count"></b></a><a href="#connections" data-view="connections"><span>⌘</span> Connections</a><a href="#materials" data-view="materials"><span>▱</span> Materials</a><a href="#guide" data-view="guide"><span>ⓘ</span> How to use</a></nav>
+<div class="side-label subject-label">EXPLORE BY SUBJECT</div><div id="subject-nav"></div>
+<div class="sidebar-bottom"><div class="local-dot"></div><strong>Your pace. Your path.</strong><p>No schedule to keep.<br>Build understanding, one idea at a time.</p><button class="side-backup" data-action="export">↓ Export progress</button><button class="side-backup" data-action="import">↑ Import progress</button><small>Progress is saved in this browser.<br>Export a backup to keep or move it.</small><div id="storage-warning" role="status"></div></div>
+</aside>
+<div class="workspace"><header class="topbar"><a class="mobile-brand" href="#overview">ML Atlas ↗</a><span class="breadcrumb">LEARNING / <b id="breadcrumb">OVERVIEW</b></span><span class="edition">OFFLINE EDITION <i>01</i></span></header><main id="main" tabindex="-1"></main><footer>ML Atlas <span>Understanding over completion.</span><a href="#guide">About this curriculum ↗</a></footer></div>
+<dialog id="topic-dialog" aria-labelledby="topic-title"><div id="topic-detail"></div></dialog>
+<dialog id="import-dialog" aria-labelledby="import-title"><div class="import-content"><button class="close" data-action="cancel-import" aria-label="Close import">×</button><p class="eyebrow">PROGRESS BACKUP</p><h2 id="import-title">Review your import</h2><p id="import-summary"></p><p>Matching topic records will replace their current status, confidence, notes and evidence. Other records stay as they are. Export your current progress first if you want to keep a separate copy.</p><div class="button-row"><button class="button" data-action="export">Export current progress</button><button class="button primary" data-action="confirm-import">Import these records</button></div></div></dialog>
+<input id="import-file" type="file" accept="application/json,.json" hidden><div id="toast" role="status" aria-live="polite"></div>
+<script>window.CURRICULUM = {
+  "version": 1,
+  "title": "ML Atlas",
+  "tracks": [
+    {
+      "id": "ml",
+      "name": "Machine learning",
+      "short": "ML",
+      "color": "#22614d",
+      "description": "Frame, train, evaluate and explain models."
+    },
+    {
+      "id": "py",
+      "name": "Python",
+      "short": "PY",
+      "color": "#496a9d",
+      "description": "Turn ideas into reproducible experiments."
+    },
+    {
+      "id": "sql",
+      "name": "SQL",
+      "short": "SQL",
+      "color": "#977344",
+      "description": "Build correct datasets from relational data."
+    },
+    {
+      "id": "la",
+      "name": "Linear algebra",
+      "short": "LA",
+      "color": "#85669c",
+      "description": "Understand features, parameters and transformations."
+    },
+    {
+      "id": "stats",
+      "name": "Statistics",
+      "short": "ST",
+      "color": "#ae6650",
+      "description": "Reason about uncertainty, evidence and variation."
+    },
+    {
+      "id": "cal",
+      "name": "Calculus",
+      "short": "CA",
+      "color": "#507e83",
+      "description": "Understand how parameters change and models learn."
+    }
+  ],
+  "stages": [
+    {
+      "id": 1,
+      "title": "Work with data",
+      "description": "Define the question, inspect the observations and prepare your tools."
+    },
+    {
+      "id": 2,
+      "title": "Represent relationships",
+      "description": "Connect tables and arrays to vectors, functions and uncertainty."
+    },
+    {
+      "id": 3,
+      "title": "Build a first model",
+      "description": "Set a baseline, protect your evaluation and fit linear regression."
+    },
+    {
+      "id": 4,
+      "title": "Understand learning",
+      "description": "Follow derivatives, gradients and regularization into optimization."
+    },
+    {
+      "id": 5,
+      "title": "Evaluate evidence",
+      "description": "Work with uncertainty, validation, classification and leakage."
+    },
+    {
+      "id": 6,
+      "title": "Compare & improve",
+      "description": "Explore model families and investigate where predictions fail."
+    },
+    {
+      "id": 7,
+      "title": "Connect & demonstrate",
+      "description": "Understand neural foundations and complete an independent project."
+    },
+    {
+      "id": 8,
+      "title": "Expand when ready",
+      "description": "Optional branches, kept separate from core completion."
+    }
+  ],
+  "resources": {
+    "islp": [
+      "Statistical Learning with Python",
+      "https://www.statlearning.com/",
+      "Main ML guide",
+      "Use the named chapter and its Python lab; the book and companion course form one route."
+    ],
+    "python": [
+      "The Python Tutorial",
+      "https://docs.python.org/3/tutorial/",
+      "Primary documentation",
+      "Read the named section, then solve the task without copying its example."
+    ],
+    "numpy": [
+      "NumPy beginner guide",
+      "https://numpy.org/doc/stable/user/absolute_beginners.html",
+      "Primary documentation",
+      "Focus on shapes and operations; predict an output before running it."
+    ],
+    "pandas": [
+      "pandas getting-started tutorials",
+      "https://pandas.pydata.org/docs/getting_started/intro_tutorials/",
+      "Primary documentation",
+      "Use the tutorial matching the operation, then repeat it on your own data."
+    ],
+    "sql": [
+      "PostgreSQL tutorial",
+      "https://www.postgresql.org/docs/current/tutorial.html",
+      "Primary documentation",
+      "SQL examples use PostgreSQL; check dialect differences if using MySQL or SQLite."
+    ],
+    "khan": [
+      "Khan Academy mathematics",
+      "https://www.khanacademy.org/math",
+      "Prerequisite support",
+      "Use only the topic named here. You do not need to complete all mathematics first."
+    ],
+    "mml": [
+      "Mathematics for Machine Learning",
+      "https://mml-book.github.io/",
+      "Mathematics reference",
+      "Read the relevant section, then work through a small numerical example."
+    ],
+    "statbook": [
+      "Online Statistics Education",
+      "https://onlinestatbook.com/",
+      "Statistics reference",
+      "Use explanations and exercises for the named topic."
+    ],
+    "seeing": [
+      "Seeing Theory",
+      "https://seeing-theory.brown.edu/",
+      "Visual companion",
+      "Explore the named demonstration and explain what changes. Archived site; concepts remain useful."
+    ],
+    "quest": [
+      "StatQuest",
+      "https://statquest.org/",
+      "Explanation companion",
+      "Find the video for the named concept, then return to the primary material."
+    ],
+    "mlu": [
+      "MLU-Explain",
+      "https://mlu-explain.github.io/",
+      "Visual companion",
+      "Use a visual essay to build intuition, then test it in your notebook."
+    ],
+    "wilke": [
+      "Fundamentals of Data Visualization",
+      "https://clauswilke.com/dataviz/",
+      "Communication reference",
+      "Choose the relevant chart or design chapter."
+    ],
+    "stories": [
+      "Telling Stories with Data",
+      "https://tellingstorieswithdata.com/",
+      "Analysis workflow reference",
+      "Use the named chapter to strengthen the reasoning and reproducibility of your project."
+    ],
+    "sklearn": [
+      "scikit-learn user guide",
+      "https://scikit-learn.org/stable/user_guide.html",
+      "Implementation reference",
+      "Consult current API examples and methodological guidance for the named topic."
+    ],
+    "fastai": [
+      "Practical Deep Learning for Coders",
+      "https://course.fast.ai/",
+      "Later specialization",
+      "Start after basic model evaluation and Python. Use selected neural-network lessons first."
+    ],
+    "zoom": [
+      "ML Zoomcamp",
+      "https://github.com/DataTalksClub/machine-learning-zoomcamp",
+      "Project-oriented alternative",
+      "Use selected project or deployment modules. It can replace the main route; do not add the whole course in parallel."
+    ],
+    "visual": [
+      "ML Visualized",
+      "https://ml-visualized.com/",
+      "Implementation companion",
+      "Inspect selected notebooks; cross-check mathematical explanations with the primary source."
+    ],
+    "harvard": [
+      "Harvard STAT 110",
+      "https://stat110.hsites.harvard.edu/",
+      "Probability deepening",
+      "A substantial optional probability route; not a prerequisite to begin applied ML."
+    ],
+    "hf": [
+      "Hugging Face Learn",
+      "https://huggingface.co/learn",
+      "Later specialization",
+      "Choose a specific LLM or other course after neural-network foundations."
+    ],
+    "fareed": [
+      "Train LLM from Scratch",
+      "https://github.com/FareedKhan-dev/train-llm-from-scratch",
+      "Project reference",
+      "Use after PyTorch basics. Author training claims and implementation quality are not independently audited here."
+    ],
+    "sheets": [
+      "Spreadsheets Are All You Need",
+      "https://spreadsheets-are-all-you-need.ai/",
+      "Visual project inspiration",
+      "Study how intermediate computations are exposed; use that idea in your own notebook."
+    ],
+    "mlsys": [
+      "Machine Learning Systems",
+      "https://mlsysbook.ai/",
+      "Systems reference",
+      "Use after an end-to-end modeling project."
+    ],
+    "git": [
+      "GitMastery",
+      "https://gitmastery.me/",
+      "Practice companion",
+      "Practice a command and then use it on your own learning repository."
+    ],
+    "kaggle": [
+      "Kaggle Learn",
+      "https://www.kaggle.com/learn/",
+      "Short practice",
+      "Choose Intro to ML or Intermediate ML as a bridge, not another full parallel curriculum."
+    ],
+    "critical": [
+      "Calling Bullshit",
+      "https://callingbullshit.org/",
+      "Critical reasoning",
+      "Use examples to inspect claims, measurements, denominators, and causal language."
+    ]
+  },
+  "topics": [
+    {
+      "id": "p01",
+      "track": "py",
+      "stage": 1,
+      "importance": "Core",
+      "depth": "Apply",
+      "title": "Python values & collections",
+      "why": "Represent observations and model settings without losing their meaning.",
+      "requires": [],
+      "deeper": [],
+      "outcomes": [
+        "Choose lists, tuples, dictionaries and sets appropriately",
+        "Distinguish numbers, strings, booleans and None",
+        "Explain mutation and shared references"
+      ],
+      "task": "Create two variables pointing to the same list [1, 2]. Append 3 through one variable. Predict both values; then make an independent copy.",
+      "answer": "Both names refer to [1, 2, 3]. A shallow copy gives an independent outer list; nested mutable objects may still be shared.",
+      "resource": "python",
+      "section": "Ch. 3 and 5: introduction and data structures"
+    },
+    {
+      "id": "p02",
+      "track": "py",
+      "stage": 1,
+      "importance": "Core",
+      "depth": "Apply",
+      "title": "Control flow & reusable functions",
+      "why": "Turn repeated analysis steps into understandable, testable code.",
+      "requires": [
+        "p01"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Write functions with parameters and return values",
+        "Use loops, conditions and comprehensions",
+        "Handle empty input explicitly"
+      ],
+      "task": "Write mean_nonmissing(values), ignoring None. Test [2, None, 4] and an empty list. Explain your empty-input policy.",
+      "answer": "The first result is 3.0. Empty input must have a deliberate policy, such as raising ValueError. Do not silently return zero.",
+      "resource": "python",
+      "section": "Ch. 4: control flow and defining functions"
+    },
+    {
+      "id": "p03",
+      "track": "py",
+      "stage": 1,
+      "importance": "Core",
+      "depth": "Apply",
+      "title": "Environments, files & debugging",
+      "why": "Make experiments rerunnable instead of depending on hidden notebook state.",
+      "requires": [
+        "p02"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Create an environment and select its notebook kernel",
+        "Read CSV/JSON and use relative project paths",
+        "Read a traceback and restart/run all cells"
+      ],
+      "task": "Create a small project with a data file, a function and a notebook. Run it from a clean kernel and record the environment dependencies.",
+      "answer": "A clean run reproduces the output without manually defined variables or personal absolute paths. Dependencies and input file locations are documented.",
+      "resource": "python",
+      "section": "Ch. 6–8 and 12: modules, I/O, exceptions and environments"
+    },
+    {
+      "id": "p04",
+      "track": "py",
+      "stage": 2,
+      "importance": "Core",
+      "depth": "Apply",
+      "title": "NumPy shapes & indexing",
+      "why": "Read the dimensions of the data used by ML models.",
+      "requires": [
+        "p02"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Distinguish shape (n,), (n, 1) and (1, n)",
+        "Select rows, columns and values with masks",
+        "Explain axis-based reductions"
+      ],
+      "task": "For an array with shape (100, 4), predict the shapes of X[:, 0], X[:, [0]], X.mean(axis=0) and X.mean(axis=1). Verify them.",
+      "answer": "Shapes are (100,), (100, 1), (4,) and (100,). Explain that axis=0 aggregates rows, leaving one result per column.",
+      "resource": "numpy",
+      "section": "Array shape, indexing and aggregation"
+    },
+    {
+      "id": "p05",
+      "track": "py",
+      "stage": 2,
+      "importance": "Core",
+      "depth": "Apply",
+      "title": "Vectorization & broadcasting",
+      "why": "Implement numerical computations with explicit control of dimensions.",
+      "requires": [
+        "p04"
+      ],
+      "deeper": [
+        "l02"
+      ],
+      "outcomes": [
+        "Replace element-by-element loops with array operations",
+        "Predict broadcasting shapes",
+        "Distinguish elementwise multiplication from matrix multiplication"
+      ],
+      "task": "Subtract each feature mean from a (100, 4) matrix. Why can subtracting a (100,) vector fail? Why is a column vector different?",
+      "answer": "Feature means have shape (4,) and broadcast across rows. (100,) conflicts with trailing dimension 4. A (100, 1) array broadcasts one value per row.",
+      "resource": "numpy",
+      "section": "Broadcasting and array operations"
+    },
+    {
+      "id": "p06",
+      "track": "py",
+      "stage": 1,
+      "importance": "Core",
+      "depth": "Apply",
+      "title": "pandas: select, summarize & combine",
+      "why": "Move from raw records to analysis-ready tables.",
+      "requires": [
+        "p02"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Select rows/columns and inspect dtypes",
+        "Use groupby and merge with cardinality checks",
+        "Distinguish index alignment from row position"
+      ],
+      "task": "Group observations by station and calculate count and mean. Join station metadata with validate='many_to_one'; explain why duplicate metadata keys should fail.",
+      "answer": "One summary row per station. Metadata needs one row per station key; duplicate keys can multiply observations. Investigate rather than accepting the larger table.",
+      "resource": "pandas",
+      "section": "Selection, summary statistics and combining tables"
+    },
+    {
+      "id": "p07",
+      "track": "py",
+      "stage": 1,
+      "importance": "Core",
+      "depth": "Apply",
+      "title": "Data quality & feature types",
+      "why": "Identify inputs that could distort a model before fitting it.",
+      "requires": [
+        "p06"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Distinguish continuous, categorical, ordinal and identifier columns",
+        "Inspect missingness, duplicates and impossible values",
+        "Record cleaning choices without silently deleting evidence"
+      ],
+      "task": "Profile a table with age=-5, missing income, repeated IDs and a categorical postcode. Propose checks and a treatment for each.",
+      "answer": "Flag impossible ages; investigate missingness and duplicate grain; treat postcode as a category rather than a numeric distance. Do not automatically drop every unusual row.",
+      "resource": "stories",
+      "section": "Ch. 9: clean, prepare and test"
+    },
+    {
+      "id": "p08",
+      "track": "py",
+      "stage": 1,
+      "importance": "Core",
+      "depth": "Apply",
+      "title": "Exploration & honest charts",
+      "why": "Understand distributions and communicate observations accurately.",
+      "requires": [
+        "p06"
+      ],
+      "deeper": [
+        "s01"
+      ],
+      "outcomes": [
+        "Choose histograms, boxplots and scatterplots for a question",
+        "Inspect group differences and outliers",
+        "Label units and communicate uncertainty or sample size"
+      ],
+      "task": "Show a skewed energy-use distribution and its relationship with temperature. Explain what a mean alone hides.",
+      "answer": "A distribution plot reveals skew/outliers; a scatterplot reveals shape and spread. Include units and sample counts. Association alone does not establish causation.",
+      "resource": "wilke",
+      "section": "Distributions, relationships and visualizing uncertainty"
+    },
+    {
+      "id": "q01",
+      "track": "sql",
+      "stage": 1,
+      "importance": "Core",
+      "depth": "Apply",
+      "title": "Table grain, keys & SELECT",
+      "why": "Know what one row represents before using it as an example.",
+      "requires": [],
+      "deeper": [],
+      "outcomes": [
+        "State the observational unit and candidate key",
+        "Filter, sort and select columns",
+        "Distinguish identifiers from predictive features"
+      ],
+      "task": "A meter table has meter_id, timestamp and kWh. What is its likely grain? Write a query selecting readings above 10 kWh.",
+      "answer": "Likely one reading per meter and timestamp; verify uniqueness of that pair. SELECT meter_id, timestamp, kWh FROM readings WHERE kWh > 10; units and measurement interval still need checking.",
+      "resource": "sql",
+      "section": "Tables and querying a table"
+    },
+    {
+      "id": "q02",
+      "track": "sql",
+      "stage": 1,
+      "importance": "Core",
+      "depth": "Apply",
+      "title": "Aggregation, NULL & CASE",
+      "why": "Create summaries without silently changing denominators.",
+      "requires": [
+        "q01"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Use GROUP BY and HAVING",
+        "Explain COUNT(*) versus COUNT(column)",
+        "Handle NULL explicitly and define categories with CASE"
+      ],
+      "task": "For values 2, NULL, 4, what are COUNT(*), COUNT(value), AVG(value)? How would replacing NULL with zero change the interpretation?",
+      "answer": "Results are 3, 2 and 3. Replacing NULL with zero changes the mean to 2 and assumes missing means zero, which needs justification.",
+      "resource": "sql",
+      "section": "Aggregate functions; supplement with conditional expressions in the documentation"
+    },
+    {
+      "id": "q03",
+      "track": "sql",
+      "stage": 1,
+      "importance": "Core",
+      "depth": "Apply",
+      "title": "Joins & cardinality",
+      "why": "Prevent duplicated training examples and biased aggregates.",
+      "requires": [
+        "q01"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Predict one-to-many join row counts",
+        "Choose INNER versus LEFT JOIN",
+        "Check unmatched and repeated keys"
+      ],
+      "task": "Two readings for station A join to three metadata records for A. How many rows result? Design a safe station-metadata join.",
+      "answer": "Six rows result. Resolve metadata to the intended single row per station (or use valid-time keys), check uniqueness, then join and compare counts.",
+      "resource": "sql",
+      "section": "Joins between tables"
+    },
+    {
+      "id": "q04",
+      "track": "sql",
+      "stage": 2,
+      "importance": "Core",
+      "depth": "Apply",
+      "title": "CTEs & staged feature queries",
+      "why": "Make data transformations readable and inspectable.",
+      "requires": [
+        "q02",
+        "q03"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Use a CTE to name an intermediate result",
+        "Separate aggregation from downstream filtering",
+        "Verify the grain after each step"
+      ],
+      "task": "Build one CTE of mean kWh per meter, then select meters above the overall mean of those meter averages. Explain the weighting.",
+      "answer": "Each meter contributes equally to the final threshold, regardless of reading count. This differs from the average across all readings.",
+      "resource": "sql",
+      "section": "WITH queries in the SQL language documentation"
+    },
+    {
+      "id": "q05",
+      "track": "sql",
+      "stage": 5,
+      "importance": "Supporting",
+      "depth": "Apply",
+      "title": "Window functions & temporal features",
+      "why": "Compute context while preserving individual observations.",
+      "requires": [
+        "q04"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Use PARTITION BY and ORDER BY",
+        "Distinguish window calculations from GROUP BY",
+        "Exclude future information from historical features"
+      ],
+      "task": "Compute a prior-three-reading average per meter, excluding the current reading. Explain why gaps in timestamps matter.",
+      "answer": "Use AVG(kWh) OVER (PARTITION BY meter_id ORDER BY timestamp ROWS BETWEEN 3 PRECEDING AND 1 PRECEDING). This means three rows, not necessarily three hours; define tie handling and time gaps.",
+      "resource": "sql",
+      "section": "Advanced features: window functions; window frame documentation"
+    },
+    {
+      "id": "l01",
+      "track": "la",
+      "stage": 2,
+      "importance": "Core",
+      "depth": "Explain + Apply",
+      "title": "Vectors, dimensions & norms",
+      "why": "Represent a record as numerical coordinates and measure size.",
+      "requires": [],
+      "deeper": [],
+      "outcomes": [
+        "Interpret a vector as features or parameters",
+        "Compute a Euclidean norm and distance",
+        "Explain why units and scale affect distance"
+      ],
+      "task": "Find the distance between (1, 2) and (4, 6). What changes if the first coordinate is converted from meters to millimeters?",
+      "answer": "Distance is 5 in the original coordinate system. Rescaling one feature changes its relative contribution; mixed-unit distance requires deliberate scaling.",
+      "resource": "mml",
+      "section": "Ch. 2: linear algebra; Ch. 3: norms and inner products"
+    },
+    {
+      "id": "l02",
+      "track": "la",
+      "stage": 2,
+      "importance": "Core",
+      "depth": "Explain + Apply",
+      "title": "Dot products & matrix multiplication",
+      "why": "Understand how models combine many features into predictions.",
+      "requires": [
+        "l01"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Compute a dot product",
+        "Check compatible matrix dimensions",
+        "Express batch predictions as Xw + b"
+      ],
+      "task": "Let X=[[1,2],[3,4]], w=[2,-1] and b=0.5. Calculate predictions and explain every dimension.",
+      "answer": "Xw is [0, 2]; adding the scalar bias gives [0.5, 2.5]. X is (2,2), w is (2,), predictions are (2,).",
+      "resource": "mml",
+      "section": "Ch. 2 and 3: matrix multiplication and inner products"
+    },
+    {
+      "id": "l03",
+      "track": "la",
+      "stage": 3,
+      "importance": "Core",
+      "depth": "Explain",
+      "title": "Span, rank & redundant features",
+      "why": "Recognize when different parameter values can give the same prediction.",
+      "requires": [
+        "l02"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Explain linear combinations and span",
+        "Identify dependent columns",
+        "Connect rank deficiency to non-unique least-squares coefficients"
+      ],
+      "task": "A design matrix has columns x and 2x. Can the two coefficients be uniquely identified from predictions alone?",
+      "answer": "No. Predictions depend on w1 + 2w2. Many coefficient pairs give the same fitted values; more rows alone do not remove exact redundancy.",
+      "resource": "mml",
+      "section": "Ch. 2: linear independence, basis and rank"
+    },
+    {
+      "id": "l04",
+      "track": "la",
+      "stage": 3,
+      "importance": "Supporting",
+      "depth": "Explain + Derive",
+      "title": "Projections & least squares",
+      "why": "Connect regression residuals to a geometric picture.",
+      "requires": [
+        "l03"
+      ],
+      "deeper": [
+        "c02"
+      ],
+      "outcomes": [
+        "Interpret a projection onto a subspace",
+        "Explain least squares as minimizing residual length",
+        "State the assumptions of the normal-equation formula"
+      ],
+      "task": "For fitting a constant to y=[1,2,6], find the least-squares constant and residual vector. Explain why the residuals sum to zero.",
+      "answer": "The constant is 3 and residuals are [-2,-1,3]. Orthogonality to the constant column gives zero residual sum. Avoid explicit matrix inversion in numerical implementations.",
+      "resource": "mml",
+      "section": "Ch. 3: projections; Ch. 9: linear regression"
+    },
+    {
+      "id": "l05",
+      "track": "la",
+      "stage": 6,
+      "importance": "Supporting",
+      "depth": "Explain",
+      "title": "Eigenvectors & singular values",
+      "why": "Understand the directions retained by dimensionality reduction.",
+      "requires": [
+        "l03"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Interpret an eigenvector as a direction preserved by a square map",
+        "Explain SVD as a matrix decomposition",
+        "Relate large singular values to variation in centered data"
+      ],
+      "task": "For diag(3,1), identify two eigenvectors and eigenvalues. Why should PCA data be centered first?",
+      "answer": "Coordinate directions are eigenvectors with eigenvalues 3 and 1. Centering makes variation measured around the mean instead of the arbitrary origin.",
+      "resource": "mml",
+      "section": "Ch. 4: matrix decompositions"
+    },
+    {
+      "id": "l06",
+      "track": "la",
+      "stage": 7,
+      "importance": "Core",
+      "depth": "Apply",
+      "title": "Tensor shapes through a network",
+      "why": "Track batches, weights and activations without guessing.",
+      "requires": [
+        "l02",
+        "p04"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Write the shape of a dense layer output",
+        "Identify batch and feature dimensions",
+        "Distinguish a matrix from a higher-dimensional tensor"
+      ],
+      "task": "A batch X has shape (32,8), W has (8,16), bias has (16,). What is XW+b? Add a one-output layer.",
+      "answer": "Hidden output is (32,16). A weight matrix (16,1) and bias (1,) produce (32,1). Bias broadcasts across batch rows.",
+      "resource": "numpy",
+      "section": "Shapes and broadcasting; connect to dense-layer calculations"
+    },
+    {
+      "id": "c01",
+      "track": "cal",
+      "stage": 2,
+      "importance": "Core",
+      "depth": "Explain + Apply",
+      "title": "Functions, logs & mathematical notation",
+      "why": "Read the expressions used to define models and losses.",
+      "requires": [],
+      "deeper": [],
+      "outcomes": [
+        "Read function notation and summation",
+        "Use powers and logarithms",
+        "Distinguish a function input from a fixed parameter"
+      ],
+      "task": "For f(x)=2x+1, calculate f(3). Explain log(ab)=log(a)+log(b) for positive a,b and why log(0) is problematic.",
+      "answer": "f(3)=7. The logarithm turns multiplication into addition on positive inputs. log(0) is not finite; numerical code needs careful handling near zero.",
+      "resource": "khan",
+      "section": "Algebra: functions, exponents, logarithms and summation notation"
+    },
+    {
+      "id": "c02",
+      "track": "cal",
+      "stage": 4,
+      "importance": "Core",
+      "depth": "Explain + Derive",
+      "title": "Derivatives & local change",
+      "why": "Explain the slope that drives parameter updates.",
+      "requires": [
+        "c01"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Interpret a derivative as local rate of change",
+        "Differentiate constants, powers, exp and log",
+        "Distinguish slope from function value"
+      ],
+      "task": "For L(w)=(w-3)^2, compute L(1), L'(1) and a step w_new=w-0.1 L'(w).",
+      "answer": "L(1)=4, L'(w)=2(w-3), L'(1)=-4, w_new=1.4. The derivative indicates a local change direction, not the current loss.",
+      "resource": "khan",
+      "section": "Differential calculus: derivative meaning and rules"
+    },
+    {
+      "id": "c03",
+      "track": "cal",
+      "stage": 4,
+      "importance": "Core",
+      "depth": "Explain + Derive",
+      "title": "Partial derivatives & gradients",
+      "why": "Update several model parameters together.",
+      "requires": [
+        "c02",
+        "l01"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Differentiate with respect to one variable while holding others fixed",
+        "Assemble a gradient vector",
+        "Explain why the negative gradient is a local descent direction"
+      ],
+      "task": "For L(a,b)=(a+2b-5)^2, compute the gradient at (1,1).",
+      "answer": "Residual is -2. Gradient is [2r,4r]=[-4,-8]. A small step in the negative gradient direction reduces this differentiable loss.",
+      "resource": "mml",
+      "section": "Ch. 5: vector calculus and gradients"
+    },
+    {
+      "id": "c04",
+      "track": "cal",
+      "stage": 4,
+      "importance": "Core",
+      "depth": "Explain + Derive",
+      "title": "Chain rule & computational graphs",
+      "why": "Understand gradients through composed operations.",
+      "requires": [
+        "c03"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Decompose a computation into intermediate values",
+        "Apply the chain rule",
+        "Accumulate gradient contributions from multiple paths"
+      ],
+      "task": "Let z=wx, prediction=z+b and L=(prediction-y)^2. Derive dL/dw and dL/db.",
+      "answer": "dL/dw=2(prediction-y)x and dL/db=2(prediction-y). Gradients multiply along a path and add across paths to a shared variable.",
+      "resource": "mml",
+      "section": "Ch. 5: chain rule; optional ML Visualized neural-network notebook"
+    },
+    {
+      "id": "c05",
+      "track": "cal",
+      "stage": 4,
+      "importance": "Core",
+      "depth": "Implement",
+      "title": "Gradient descent & learning rate",
+      "why": "Understand training as an iterative optimization procedure.",
+      "requires": [
+        "c03",
+        "p05"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Implement parameter updates for a simple loss",
+        "Explain learning-rate instability",
+        "Monitor loss without assuming convergence is guaranteed"
+      ],
+      "task": "Implement gradient descent on L(w)=(w-3)^2 from w=0. Compare learning rates 0.1, 1 and 1.1.",
+      "answer": "At 0.1 the iterates converge. At 1 they oscillate between 0 and 6. At 1.1 they diverge. Behavior depends on curvature and step size.",
+      "resource": "visual",
+      "section": "Gradient Descent; primary mathematical reference: MML Ch. 7"
+    },
+    {
+      "id": "c06",
+      "track": "cal",
+      "stage": 5,
+      "importance": "Supporting",
+      "depth": "Explain",
+      "title": "Curvature, convexity & constraints",
+      "why": "Know what optimization results do and do not guarantee.",
+      "requires": [
+        "c05"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Distinguish local from global minima",
+        "Recognize a convex objective",
+        "Separate optimization error from generalization error"
+      ],
+      "task": "If training loss reaches its global minimum, does that establish a useful predictive model? Give two reasons.",
+      "answer": "No. The model may overfit or the data may not match future use. Global optimization of a training objective does not guarantee low unseen-data error.",
+      "resource": "mml",
+      "section": "Ch. 7: continuous optimization"
+    },
+    {
+      "id": "s01",
+      "track": "stats",
+      "stage": 1,
+      "importance": "Core",
+      "depth": "Explain + Apply",
+      "title": "Distributions & descriptive statistics",
+      "why": "Summarize data without hiding its structure.",
+      "requires": [],
+      "deeper": [],
+      "outcomes": [
+        "Calculate mean, median, quantiles and spread",
+        "Recognize skew and outliers",
+        "Distinguish sample and population summaries"
+      ],
+      "task": "For [1,2,2,3,12], calculate mean and median. Explain which better represents a typical observation.",
+      "answer": "Mean is 4; median is 2. The high value pulls the mean upward. Choice depends on the question; retain the distribution rather than declaring one universally best.",
+      "resource": "statbook",
+      "section": "Describing data and summarizing distributions"
+    },
+    {
+      "id": "s02",
+      "track": "stats",
+      "stage": 2,
+      "importance": "Core",
+      "depth": "Explain + Apply",
+      "title": "Probability & random variables",
+      "why": "Describe uncertain outcomes and the quantities models predict.",
+      "requires": [
+        "s01"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Distinguish outcomes, events and random variables",
+        "Use complement and union rules",
+        "Distinguish discrete probabilities from continuous densities"
+      ],
+      "task": "For a continuous variable, can density exceed 1? What is the probability of one exact value under a continuous distribution?",
+      "answer": "Density can exceed 1; area over an interval is probability. A single exact point has probability zero for a continuous distribution.",
+      "resource": "seeing",
+      "section": "Basic probability and probability distributions"
+    },
+    {
+      "id": "s03",
+      "track": "stats",
+      "stage": 3,
+      "importance": "Core",
+      "depth": "Explain + Apply",
+      "title": "Conditional probability & Bayes",
+      "why": "Interpret predictions in the context of base rates.",
+      "requires": [
+        "s02"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Distinguish P(A given B) from P(B given A)",
+        "Apply Bayes' rule",
+        "Explain the effect of a rare positive class"
+      ],
+      "task": "Prevalence is 1%, sensitivity 90%, and false-positive rate 5%. Among 10,000 cases, what fraction of predicted positives are true positives?",
+      "answer": "90 true positives and 495 false positives: 90/585 ≈ 15.4%. High sensitivity alone does not imply high precision.",
+      "resource": "seeing",
+      "section": "Compound probability; Bayes' theorem"
+    },
+    {
+      "id": "s04",
+      "track": "stats",
+      "stage": 3,
+      "importance": "Core",
+      "depth": "Explain + Apply",
+      "title": "Expectation, variance & covariance",
+      "why": "Describe average behavior and dependence between quantities.",
+      "requires": [
+        "s02",
+        "l01"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Calculate expectation and variance",
+        "Interpret covariance and correlation",
+        "Explain that zero correlation need not mean independence"
+      ],
+      "task": "Let X be equally likely -1,0,1 and Y=X^2. Are X and Y independent? What is their covariance?",
+      "answer": "They are dependent because Y is fixed by X. Covariance is zero by symmetry: E[XY]=E[X^3]=0 and E[X]=0.",
+      "resource": "statbook",
+      "section": "Probability, variability and correlation"
+    },
+    {
+      "id": "s05",
+      "track": "stats",
+      "stage": 5,
+      "importance": "Core",
+      "depth": "Explain",
+      "title": "Sampling, bias & uncertainty",
+      "why": "Understand why a dataset may not support a general claim.",
+      "requires": [
+        "s02"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Distinguish sampling variation from selection bias",
+        "Explain standard error and confidence intervals",
+        "Describe what bootstrap resampling approximates"
+      ],
+      "task": "A survey of app users has one million responses. Does the large sample remove bias when describing all residents?",
+      "answer": "No. Sample size can reduce sampling variation but cannot automatically correct selection or measurement bias. Define the target population and who is missing.",
+      "resource": "stories",
+      "section": "Ch. 6: measurement, censuses and sampling"
+    },
+    {
+      "id": "s06",
+      "track": "stats",
+      "stage": 5,
+      "importance": "Supporting",
+      "depth": "Explain + Apply",
+      "title": "Confidence intervals & hypothesis tests",
+      "why": "Make calibrated statements about uncertain estimates.",
+      "requires": [
+        "s05"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Interpret a frequentist confidence interval",
+        "State what a p-value conditions on",
+        "Distinguish effect size, significance and practical importance"
+      ],
+      "task": "A test gives p=0.03. Does this mean a 97% probability that the alternative hypothesis is true?",
+      "answer": "No. Under the null model and its assumptions, the p-value concerns results at least as extreme as observed. It is not a posterior probability of either hypothesis.",
+      "resource": "statbook",
+      "section": "Confidence intervals and hypothesis testing"
+    },
+    {
+      "id": "s07",
+      "track": "stats",
+      "stage": 5,
+      "importance": "Core",
+      "depth": "Explain",
+      "title": "Association, confounding & causality",
+      "why": "Avoid turning predictive associations into unsupported interventions.",
+      "requires": [
+        "s04",
+        "s05"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Explain a confounder with a diagram or example",
+        "Distinguish prediction from causal estimation",
+        "Recognize ecological and selection effects"
+      ],
+      "task": "Areas with more emergency vehicles have more injuries. Would reducing vehicle numbers reduce injuries? Explain an alternative causal account.",
+      "answer": "Incident severity can increase both vehicle deployment and injury count. Observational association alone does not identify the effect of changing vehicle numbers.",
+      "resource": "critical",
+      "section": "Correlation, causation and selection bias"
+    },
+    {
+      "id": "s08",
+      "track": "stats",
+      "stage": 6,
+      "importance": "Supporting",
+      "depth": "Explain + Derive",
+      "title": "Likelihood & maximum likelihood",
+      "why": "Connect probabilistic models to training objectives.",
+      "requires": [
+        "s03",
+        "c01"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Distinguish likelihood from a probability distribution over parameters",
+        "Write Bernoulli likelihood",
+        "Explain why logs simplify products"
+      ],
+      "task": "For labels [1,1,0] under a shared Bernoulli p, write the likelihood and find its maximum.",
+      "answer": "Likelihood is p^2(1-p), maximized at p=2/3. Log-likelihood is 2 log(p)+log(1-p). Parameters are varied while observations stay fixed.",
+      "resource": "mml",
+      "section": "Ch. 6 and 8: probability and parameter estimation"
+    },
+    {
+      "id": "m01",
+      "track": "ml",
+      "stage": 1,
+      "importance": "Core",
+      "depth": "Explain",
+      "title": "Frame an ML problem",
+      "why": "Define the prediction before selecting an algorithm.",
+      "requires": [],
+      "deeper": [],
+      "outcomes": [
+        "Identify target, features, unit and prediction moment",
+        "Distinguish supervised and unsupervised tasks",
+        "Describe the decision a prediction supports"
+      ],
+      "task": "Frame next-day electricity-demand prediction. State the target, unit, prediction time, available features and a simple alternative to ML.",
+      "answer": "Define demand units and aggregation interval. Use only data available at prediction time, such as past demand and an available weather forecast. Yesterday's demand is a possible baseline.",
+      "resource": "islp",
+      "section": "Ch. 2: statistical learning"
+    },
+    {
+      "id": "m02",
+      "track": "ml",
+      "stage": 3,
+      "importance": "Core",
+      "depth": "Explain + Apply",
+      "title": "Baselines, loss & generalization",
+      "why": "Establish what improvement means on unseen observations.",
+      "requires": [
+        "m01",
+        "s01"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Build a simple baseline",
+        "Distinguish training loss from evaluation metrics",
+        "Explain overfitting and underfitting"
+      ],
+      "task": "For targets [1,2,6], find a constant minimizing squared error and one minimizing absolute error.",
+      "answer": "Mean 3 minimizes squared error; median 2 minimizes absolute error. Compare models on held-out data, not only their training loss.",
+      "resource": "islp",
+      "section": "Ch. 2: prediction accuracy and bias–variance trade-off"
+    },
+    {
+      "id": "m03",
+      "track": "ml",
+      "stage": 3,
+      "importance": "Core",
+      "depth": "Apply",
+      "title": "Train, validation & test splits",
+      "why": "Keep model development separate from final assessment.",
+      "requires": [
+        "m02",
+        "p06"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Explain the purpose of each split",
+        "Choose random, grouped or chronological splitting",
+        "Keep preprocessing fit away from validation/test data"
+      ],
+      "task": "You have repeated records for each patient. Why can a random row split inflate performance? Propose a split for unseen-patient prediction.",
+      "answer": "Records from one patient can land in both sets. Split by patient. Fit preprocessing using the training patients only; hold final test patients aside.",
+      "resource": "sklearn",
+      "section": "Model selection: cross-validation and common pitfalls"
+    },
+    {
+      "id": "m04",
+      "track": "ml",
+      "stage": 3,
+      "importance": "Core",
+      "depth": "Explain + Apply",
+      "title": "Linear regression",
+      "why": "Build and interpret a first numerical prediction model.",
+      "requires": [
+        "m03",
+        "p05",
+        "l02"
+      ],
+      "deeper": [
+        "l03",
+        "l04",
+        "c05"
+      ],
+      "outcomes": [
+        "Fit a linear model and inspect residuals",
+        "Interpret coefficients with units and caveats",
+        "Compare with a baseline on held-out data"
+      ],
+      "task": "Model demand = 10 + 2×temperature. Predict at 5 degrees and explain what the coefficient does not establish.",
+      "answer": "Prediction is 20 demand units. The coefficient is a conditional model association, not automatically the causal effect of increasing temperature. Check validity outside observed ranges.",
+      "resource": "islp",
+      "section": "Ch. 3: linear regression and Python lab"
+    },
+    {
+      "id": "m05",
+      "track": "ml",
+      "stage": 5,
+      "importance": "Core",
+      "depth": "Explain + Apply",
+      "title": "Regression metrics & residuals",
+      "why": "Describe errors in terms that matter for the task.",
+      "requires": [
+        "m04",
+        "s01"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Compute MAE and RMSE",
+        "Interpret R-squared relative to a constant-mean benchmark",
+        "Inspect errors across ranges and groups"
+      ],
+      "task": "For y=[1,2,3] and predictions [1,2,5], calculate MAE and RMSE. Can test-set R-squared be negative?",
+      "answer": "MAE=2/3; RMSE=sqrt(4/3)≈1.155. R-squared can be negative when squared error exceeds that of the test-set mean benchmark.",
+      "resource": "islp",
+      "section": "Ch. 3: assessing model accuracy; scikit-learn regression metrics"
+    },
+    {
+      "id": "m06",
+      "track": "ml",
+      "stage": 4,
+      "importance": "Core",
+      "depth": "Explain + Apply",
+      "title": "Regularization & model complexity",
+      "why": "Control flexibility rather than trusting a low training error.",
+      "requires": [
+        "m04",
+        "c01"
+      ],
+      "deeper": [
+        "c05",
+        "l03"
+      ],
+      "outcomes": [
+        "Explain L1 and L2 penalties",
+        "Tune regularization on validation data",
+        "Explain why feature scale matters for penalties"
+      ],
+      "task": "Two equivalent features are measured in meters and millimeters. Why can an unscaled coefficient penalty treat them differently?",
+      "answer": "Equivalent predictions need different coefficient magnitudes. A magnitude penalty therefore depends on units. Fit scaling on training data and tune the penalty within validation.",
+      "resource": "islp",
+      "section": "Ch. 6: linear model selection and regularization"
+    },
+    {
+      "id": "m07",
+      "track": "ml",
+      "stage": 5,
+      "importance": "Core",
+      "depth": "Apply",
+      "title": "Preprocessing pipelines & leakage",
+      "why": "Make training and evaluation use the same valid transformations.",
+      "requires": [
+        "m03",
+        "p07"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Fit imputers, encoders and scalers on training folds only",
+        "Use a pipeline for preprocessing and modeling",
+        "Identify target and future-information leakage"
+      ],
+      "task": "You scale the entire dataset before cross-validation. What is leaked, and how should the experiment be changed?",
+      "answer": "Validation distribution statistics influence preprocessing. Put the scaler and model in a pipeline so each fold learns transformations from its training partition only.",
+      "resource": "sklearn",
+      "section": "Pipelines, preprocessing and common pitfalls"
+    },
+    {
+      "id": "m08",
+      "track": "ml",
+      "stage": 5,
+      "importance": "Core",
+      "depth": "Explain + Apply",
+      "title": "Logistic regression & probabilities",
+      "why": "Model a binary outcome and separate probabilities from decisions.",
+      "requires": [
+        "m03",
+        "p05",
+        "s03",
+        "c01"
+      ],
+      "deeper": [
+        "c04",
+        "s08"
+      ],
+      "outcomes": [
+        "Explain the sigmoid link",
+        "Distinguish probability scores from class thresholds",
+        "Fit and evaluate a binary classifier"
+      ],
+      "task": "A model outputs 0.3. Is this necessarily class 0? What changes when the threshold moves from 0.5 to 0.2?",
+      "answer": "At threshold 0.5 it is class 0; at 0.2 it is class 1. The score stays 0.3; the decision rule changes. A score is not automatically well calibrated.",
+      "resource": "islp",
+      "section": "Ch. 4: logistic regression"
+    },
+    {
+      "id": "m09",
+      "track": "ml",
+      "stage": 5,
+      "importance": "Core",
+      "depth": "Apply",
+      "title": "Classification metrics & thresholds",
+      "why": "Choose errors deliberately, especially for rare classes.",
+      "requires": [
+        "m08"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Compute precision, recall and confusion-matrix counts",
+        "Explain accuracy failure under imbalance",
+        "Select a threshold using decision costs and validation data"
+      ],
+      "task": "With TP=20, FP=10 and FN=5, calculate precision and recall. What usually happens to recall when the threshold is lowered?",
+      "answer": "Precision=20/30≈0.667; recall=20/25=0.8. Lowering a threshold generally increases or preserves recall, often adding false positives.",
+      "resource": "mlu",
+      "section": "Precision & recall; ROC and AUC"
+    },
+    {
+      "id": "m10",
+      "track": "ml",
+      "stage": 5,
+      "importance": "Core",
+      "depth": "Apply",
+      "title": "Cross-validation & tuning",
+      "why": "Compare choices without repeatedly adapting to the test set.",
+      "requires": [
+        "m07",
+        "m05"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Separate model fitting from hyperparameter selection",
+        "Use consistent folds and appropriate scorers",
+        "Explain why many trials can overfit validation results"
+      ],
+      "task": "You tune 100 configurations and report the best validation score as final performance. What is missing?",
+      "answer": "Selection favors validation noise. Evaluate the chosen workflow once on an untouched test set, or use nested cross-validation for an appropriate estimate of the selection procedure.",
+      "resource": "sklearn",
+      "section": "Cross-validation and tuning estimator hyperparameters"
+    },
+    {
+      "id": "m11",
+      "track": "ml",
+      "stage": 6,
+      "importance": "Core",
+      "depth": "Explain + Apply",
+      "title": "Nearest neighbors & distance",
+      "why": "Understand prediction through local similarity.",
+      "requires": [
+        "m03",
+        "l01",
+        "p05"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Explain k-nearest-neighbor prediction",
+        "Relate k to flexibility",
+        "Recognize scale and high-dimensional distance issues"
+      ],
+      "task": "Neighbors have labels [1,1,0]. What is the uniform-vote class at k=3? Why can a large-scale irrelevant feature ruin it?",
+      "answer": "Majority class is 1. An irrelevant feature with large numeric scale can dominate distances and change which points are neighbors. Scaling helps units, not irrelevant information itself.",
+      "resource": "islp",
+      "section": "Ch. 2 and 4: k-nearest neighbors"
+    },
+    {
+      "id": "m12",
+      "track": "ml",
+      "stage": 6,
+      "importance": "Core",
+      "depth": "Explain + Apply",
+      "title": "Decision trees",
+      "why": "Understand nonlinear prediction through partitions.",
+      "requires": [
+        "m03",
+        "p05"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Explain a split and a leaf prediction",
+        "Control depth and minimum leaf size",
+        "Recognize instability and overfitting"
+      ],
+      "task": "A tree gives perfect training accuracy with one observation per leaf. Is this good evidence of a useful model?",
+      "answer": "No. It can memorize labels. Compare held-out performance with a baseline and tune complexity on validation data.",
+      "resource": "islp",
+      "section": "Ch. 8: tree-based methods"
+    },
+    {
+      "id": "m13",
+      "track": "ml",
+      "stage": 6,
+      "importance": "Core",
+      "depth": "Explain + Apply",
+      "title": "Random forests & boosting",
+      "why": "Understand why combining models can improve prediction.",
+      "requires": [
+        "m12",
+        "m10"
+      ],
+      "deeper": [
+        "m06"
+      ],
+      "outcomes": [
+        "Distinguish bagging, random forests and boosting",
+        "Tune ensemble complexity",
+        "Compare with simpler models and inspect errors"
+      ],
+      "task": "Explain one difference between a random forest and gradient boosting without naming a library.",
+      "answer": "Random forests combine trees trained with sampling and feature randomness, largely independently. Gradient boosting adds models sequentially to improve the current objective. Neither is always best.",
+      "resource": "islp",
+      "section": "Ch. 8: bagging, random forests and boosting"
+    },
+    {
+      "id": "m14",
+      "track": "ml",
+      "stage": 6,
+      "importance": "Core",
+      "depth": "Explain + Apply",
+      "title": "Clustering & k-means",
+      "why": "Explore structure without mistaking clusters for ground truth.",
+      "requires": [
+        "l01",
+        "p05",
+        "p07"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Describe assignment and centroid update steps",
+        "Explain sensitivity to scale and initialization",
+        "Assess whether clusters serve a meaningful purpose"
+      ],
+      "task": "Run k-means on one feature measured in euros and another in years. Why might the grouping change after scaling?",
+      "answer": "Euclidean distances depend on units. Scaling changes the relative weighting of dimensions and can change clusters. There is no guarantee the resulting groups correspond to real categories.",
+      "resource": "islp",
+      "section": "Ch. 12: clustering methods"
+    },
+    {
+      "id": "m15",
+      "track": "ml",
+      "stage": 6,
+      "importance": "Core",
+      "depth": "Explain + Apply",
+      "title": "PCA & dimensionality reduction",
+      "why": "Compress correlated features while understanding what is preserved.",
+      "requires": [
+        "l02",
+        "p05",
+        "p07"
+      ],
+      "deeper": [
+        "l05",
+        "s04"
+      ],
+      "outcomes": [
+        "Explain variance-maximizing components",
+        "Distinguish projection from feature selection",
+        "Fit PCA inside the training pipeline"
+      ],
+      "task": "Does the first principal component necessarily give the best feature for predicting a target?",
+      "answer": "No. PCA ignores the target and maximizes input variance. A low-variance direction can carry predictive signal. Evaluate the downstream model on held-out data.",
+      "resource": "islp",
+      "section": "Ch. 12: principal components analysis"
+    },
+    {
+      "id": "m16",
+      "track": "ml",
+      "stage": 6,
+      "importance": "Core",
+      "depth": "Apply",
+      "title": "Error analysis & trustworthy conclusions",
+      "why": "Find where a model fails and avoid overstating its usefulness.",
+      "requires": [
+        "m09",
+        "m10",
+        "s05",
+        "s07"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Inspect performance by relevant slices",
+        "Recognize distribution shift and uncertain estimates",
+        "Write limitations and separate predictions from causal claims"
+      ],
+      "task": "Overall accuracy is 95%, but a small subgroup has 60%. What should you investigate before deployment?",
+      "answer": "Inspect subgroup size, error types, uncertainty, label quality and use-case costs. Aggregate performance can hide unacceptable failures. Assess whether deployment data match evaluation data.",
+      "resource": "stories",
+      "section": "Modeling and communication chapters; connect to ML evaluation"
+    },
+    {
+      "id": "m17",
+      "track": "ml",
+      "stage": 7,
+      "importance": "Core",
+      "depth": "Explain + Implement",
+      "title": "Neural networks: forward pass",
+      "why": "Build a small network from explicit tensor operations.",
+      "requires": [
+        "l06",
+        "m08",
+        "p05"
+      ],
+      "deeper": [
+        "c04"
+      ],
+      "outcomes": [
+        "Compute affine layers and activations",
+        "Explain why nonlinear activations matter",
+        "Track parameter and activation shapes"
+      ],
+      "task": "Why is a stack of linear layers without nonlinear activations still equivalent to one affine map?",
+      "answer": "Matrix products and composed biases collapse to one matrix and one bias. Nonlinear activations let the network represent functions outside a single affine map.",
+      "resource": "fastai",
+      "section": "Neural net foundations and from-scratch model lessons"
+    },
+    {
+      "id": "m18",
+      "track": "ml",
+      "stage": 7,
+      "importance": "Core",
+      "depth": "Explain + Implement",
+      "title": "Backpropagation & training loops",
+      "why": "Connect calculus to a model that learns from batches.",
+      "requires": [
+        "m17",
+        "c04",
+        "c05",
+        "m06"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Explain reverse-mode gradient propagation",
+        "Implement a small training loop and reset gradients",
+        "Distinguish batches, epochs and inference"
+      ],
+      "task": "Explain why you reset accumulated gradients before the next independent update. What do you track besides training loss?",
+      "answer": "Many frameworks accumulate gradients by default. Reset unless intentionally accumulating across batches. Track validation behavior, appropriate metrics and overfitting; use held-out data correctly.",
+      "resource": "fastai",
+      "section": "From-scratch model; optional ML Visualized backpropagation notebook"
+    },
+    {
+      "id": "m19",
+      "track": "ml",
+      "stage": 7,
+      "importance": "Core",
+      "depth": "Demonstrate",
+      "title": "Independent ML project",
+      "why": "Combine the foundations in evidence you can inspect and explain.",
+      "requires": [
+        "m07",
+        "m10",
+        "m13",
+        "m16",
+        "p03"
+      ],
+      "deeper": [
+        "q04",
+        "m18"
+      ],
+      "outcomes": [
+        "Define a meaningful prediction problem and baseline",
+        "Build a reproducible training/evaluation workflow",
+        "Explain choices, limitations and errors in a report"
+      ],
+      "task": "Choose a public energy, transport or environmental dataset. Build a baseline and two models. Submit a clean notebook or script, data dictionary, split rationale and evaluation report.",
+      "answer": "A clean run reproduces results; features exist at prediction time; splits match intended use; tuning avoids the final test; metrics match costs; limitations and data provenance are explicit. A neural network is not required.",
+      "resource": "zoom",
+      "section": "Project guidance; use ISLP as your modeling reference"
+    },
+    {
+      "id": "x01",
+      "track": "ml",
+      "stage": 8,
+      "importance": "Specialization",
+      "depth": "Apply",
+      "title": "Deploy & monitor a model",
+      "why": "Turn a trained model into a service with a measurable lifecycle.",
+      "requires": [
+        "m19",
+        "p03"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Define an input/output contract",
+        "Validate inference inputs and version artifacts",
+        "Plan monitoring for errors and changing data"
+      ],
+      "task": "Write a model-service contract and a monitoring plan before choosing infrastructure.",
+      "answer": "Specify feature types, units, missing-value behavior and versioning. Monitor input changes, failures and performance when labels arrive. A running API alone does not establish model quality.",
+      "resource": "mlsys",
+      "section": "Deployment and model lifecycle topics"
+    },
+    {
+      "id": "x02",
+      "track": "ml",
+      "stage": 8,
+      "importance": "Specialization",
+      "depth": "Implement",
+      "title": "Tiny language model",
+      "why": "Explore token prediction and transparent transformer computations.",
+      "requires": [
+        "m18",
+        "m19"
+      ],
+      "deeper": [
+        "s08"
+      ],
+      "outcomes": [
+        "Explain tokens, embeddings and next-token loss",
+        "Implement a small training/evaluation experiment",
+        "Visualize intermediate computations and document limitations"
+      ],
+      "task": "Design a tiny model experiment with a parameter budget and held-out text. Explain what each proposed visualization would reveal.",
+      "answer": "Include tokenizer/vocabulary trade-offs, parameter count, train/validation separation and a baseline. Record compute limits. Visualizations should expose computations, not imply human-like reasoning.",
+      "resource": "fareed",
+      "section": "Data preparation, model pieces and tiny-model path; spreadsheet companion for visualization ideas"
+    },
+    {
+      "id": "x03",
+      "track": "la",
+      "stage": 8,
+      "importance": "Optional depth",
+      "depth": "Derive",
+      "title": "Numerical linear algebra",
+      "why": "Understand stable computation beyond textbook algebra.",
+      "requires": [
+        "l04",
+        "l05",
+        "p05"
+      ],
+      "deeper": [],
+      "outcomes": [
+        "Explain conditioning and floating-point sensitivity",
+        "Prefer appropriate solvers to explicit inversion",
+        "Compare decompositions for least squares"
+      ],
+      "task": "Why can solving normal equations directly be less stable than using QR or SVD?",
+      "answer": "Forming X-transpose-X squares the condition number in the 2-norm when full column rank. QR/SVD avoid that particular amplification; use established numerical routines.",
+      "resource": "mml",
+      "section": "Linear algebra and matrix decompositions; numerical implementation deepening"
+    },
+    {
+      "id": "x04",
+      "track": "stats",
+      "stage": 8,
+      "importance": "Optional depth",
+      "depth": "Derive",
+      "title": "Probability in greater depth",
+      "why": "Build a stronger theoretical foundation when your questions require it.",
+      "requires": [
+        "s03",
+        "s04",
+        "s05"
+      ],
+      "deeper": [
+        "c02"
+      ],
+      "outcomes": [
+        "Work with joint and conditional distributions",
+        "Use expectation identities",
+        "Distinguish convergence concepts"
+      ],
+      "task": "Explain why observing more samples does not change the population variance, even though a sample mean can become more precise.",
+      "answer": "Population spread describes individual outcomes; the sampling spread of the mean decreases under suitable independence and finite-variance assumptions. These are different random quantities.",
+      "resource": "harvard",
+      "section": "STAT 110 lectures and practice problems"
+    }
+  ]
+};
+</script>
+<script>'use strict';
+const D=window.CURRICULUM, TOPICS=D.topics, byId=Object.fromEntries(TOPICS.map(t=>[t.id,t])), tracks=Object.fromEntries(D.tracks.map(t=>[t.id,t]));
+const STORE='ml-atlas.progress.v1', statuses=['Not started','Learning','Practiced','Demonstrated'], confidence=['Not assessed','Uncertain','Comfortable','Confident'];
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let progress={}, storageOK=true, currentView='overview', activeTopic=null, pendingImport=null, materialSearch='', materialKind='all', materialPinned=false;
+let filters={search:'',subject:'all',importance:'Core',status:'all',ready:false,stage:'all'}, currentMap='m04';
+function validateRecords(obj){
+ if(!obj||typeof obj!=='object'||Array.isArray(obj))throw Error('The backup has no valid topic records.');
+ const clean={};
+ for(const [id,r] of Object.entries(obj)){
+  if(!byId[id])continue;
+  if(!r||typeof r!=='object'||Array.isArray(r)||!Number.isInteger(r.status)||r.status<0||r.status>3||!Number.isInteger(r.confidence)||r.confidence<0||r.confidence>3)throw Error('Invalid status or confidence in '+id+'.');
+  if(typeof r.notes!=='string'||r.notes.length>20000||typeof r.evidence!=='string'||r.evidence.length>4000)throw Error('Invalid notes or evidence in '+id+'.');
+  if(!Array.isArray(r.checks)||r.checks.length!==byId[id].outcomes.length||!r.checks.every(v=>typeof v==='boolean'))throw Error('Invalid competency checklist in '+id+'.');
+  clean[id]={status:r.status,confidence:r.confidence,notes:r.notes,evidence:r.evidence,checks:r.checks};
+ }
+ return clean;
+}
+let bookmarks=[];
+try{const saved=localStorage.getItem(STORE);if(saved){const parsed=JSON.parse(saved);progress=validateRecords(parsed.topics);bookmarks=Array.isArray(parsed.bookmarks)?parsed.bookmarks.filter(k=>D.resources[k]):[];}}catch(e){storageOK=false;document.getElementById('storage-warning').textContent='Saved progress could not be loaded. Existing data was not overwritten. Export this session before leaving.';}
+const record=id=>progress[id]||{status:0,confidence:0,notes:'',evidence:'',checks:byId[id].outcomes.map(()=>false)};
+const demonstrated=id=>record(id).status===3;
+const ready=t=>t.requires.every(demonstrated);
+const core=TOPICS.filter(t=>t.importance==='Core');
+function notify(message){const toast=document.getElementById('toast');toast.textContent=message;toast.classList.add('visible');clearTimeout(notify.timer);notify.timer=setTimeout(()=>toast.classList.remove('visible'),3500);}
+function persist(){if(!storageOK)return false;try{localStorage.setItem(STORE,JSON.stringify({schema:'ml-atlas-progress',version:1,topics:progress,bookmarks}));return true;}catch(e){storageOK=false;document.getElementById('storage-warning').textContent='Browser storage is unavailable or full. Export progress before leaving.';notify('Progress is in memory only. Export a backup.');return false;}}
+function updateRecord(id,key,value){progress[id]={...record(id),[key]:value};persist();const el=document.querySelector('.save-note');if(el)el.textContent=storageOK?'Saved in this browser':'In memory only — export a backup';}
+function badge(importance){return `<span class="badge ${importance==='Optional depth'?'optional':importance.toLowerCase()}">${esc(importance)}</span>`;}
+function trackIcon(t){const tr=tracks[t.track||t.id];return `<span class="subject-icon" style="--color:${tr.color}">${esc(tr.short)}</span>`;}
+function topicButton(t){const r=record(t.id);return `<button class="topic-row" data-topic="${t.id}">${trackIcon(t)}<span><h3>${esc(t.title)}</h3><p>${esc(tracks[t.track].name)} · ${esc(t.depth)}</p></span><span class="metadata">${badge(t.importance)}<span class="status ${statuses[r.status].toLowerCase()}">${r.status===3?'✓ ':''}${statuses[r.status]}</span><span class="badge">${r.status===3?'Demonstrated':ready(t)?'Ready to explore':t.requires.filter(id=>!demonstrated(id)).length+' prerequisites to check'}</span><span aria-hidden="true">↗</span></span></button>`;}
+function nextTopics(){return core.filter(t=>!demonstrated(t.id)&&ready(t)).sort((a,b)=>(record(b.id).status-record(a.id).status)||a.stage-b.stage||a.id.localeCompare(b.id)).slice(0,4);}
+function subjectCards(){return D.tracks.map(tr=>{const ts=core.filter(t=>t.track===tr.id), n=ts.filter(t=>demonstrated(t.id)).length;return `<button class="subject-card" data-subject="${tr.id}" style="--color:${tr.color}"><div class="card-top">${trackIcon(tr)}<span>↗</span></div><h3>${tr.name}</h3><p>${tr.description}</p><div class="track-line"><i style="width:${100*n/ts.length}%"></i></div><div class="card-bottom"><span>${ts.length} core competencies</span><span>${n} demonstrated</span></div></button>`;}).join('');}
+function intro(eyebrow,title,description){return `<div class="intro"><div><p class="eyebrow">${eyebrow}</p><h1>${title}</h1><p>${description}</p></div><span class="pill">Self-paced, always</span></div>`;}
+function overview(){const n=core.filter(t=>demonstrated(t.id)).length, inProgress=core.filter(t=>[1,2].includes(record(t.id).status)).length, next=nextTopics(), readyCount=core.filter(t=>!demonstrated(t.id)&&ready(t)).length;return `${intro('YOUR LEARNING LANDSCAPE','A clear path into machine learning.','Six connected subjects. One foundation. Explore what matters, find the connections, and make your understanding visible.')}
+<section class="hero"><div class="hero-left"><p class="eyebrow">${n?'KEEP BUILDING YOUR FOUNDATION':'START WITH WHAT YOU KNOW'}</p><h2>${n?'Your next step is a connection.':'You don’t have to start from zero.'}</h2><p>Use a competency’s self-check to find your starting point. Demonstrate what you already know, then follow the ideas that build on it.</p><div class="button-row"><a class="button primary" href="#curriculum">Explore the core <span>→</span></a><a class="button" href="#guide">How this works</a></div></div><div class="hero-right" aria-hidden="true"><div class="orbit"><svg viewBox="0 0 285 200"><g stroke="#b8c9aa" fill="none" stroke-width="1"><path d="M60 42 L142 100 L227 44 M32 123 L142 100 L254 125 M142 100 L142 180"/><circle cx="142" cy="100" r="78" stroke-dasharray="3 5"/></g></svg><div class="center">ML<small>FOUNDATION</small></div><div class="orb">Python</div><div class="orb">Statistics</div><div class="orb">SQL</div><div class="orb">Calculus</div><div class="orb">Linear algebra</div></div></div></section>
+<div class="stats-row"><div class="stat"><strong>${n}<span> / ${core.length}</span></strong><span>Core demonstrated</span><div class="stat-line"><i style="width:${100*n/core.length}%"></i></div></div><div class="stat"><strong>${inProgress}</strong><span>Core in progress</span></div><div class="stat"><strong>${readyCount}</strong><span>Core ready to explore</span></div><div class="stat"><strong>6</strong><span>Connected subjects</span></div></div>
+<div class="section-head"><h2>Your foundations</h2><small>Explore by subject</small></div><div class="subjects">${subjectCards()}</div>
+<div class="two-col"><section><div class="section-head"><h2>The learning path</h2><small>A sequence, not a schedule</small></div><div class="stage-list">${D.stages.filter(s=>s.id<8).map(s=>{const ts=core.filter(t=>t.stage===s.id);return `<button class="stage-row" data-stage="${s.id}"><span class="stage-num">0${s.id}</span><span><strong>${s.title}</strong><small>${ts.filter(t=>demonstrated(t.id)).length} / ${ts.length} core demonstrated</small></span><span class="arrow">→</span></button>`;}).join('')}</div></section><section><div class="section-head"><h2>Available next steps</h2><a class="text-button" href="#connections">See connections ↗</a></div><div class="next-list">${next.length?next.map(t=>`<button class="next-item" data-topic="${t.id}"><span>↗</span><strong>${esc(t.title)}</strong><small>${tracks[t.track].name} · ${record(t.id).status?'Continue exploring':'Try the self-check'}</small></button>`).join(''):'<div class="note-card">All core competencies are demonstrated. Revisit uncertain topics or explore a specialization.</div>'}</div><p class="micro">Suggestions use your prerequisite statuses. Every topic remains open.</p><div class="note-card"><div class="mini-heading">A USEFUL DISTINCTION</div><p class="quote">“I’ve read it” is a beginning.<br>“I can explain it” is progress.</p><p>Track confidence separately from evidence. Neither a checked box nor a finished course automatically demonstrates a skill.</p></div></section></div>`;}
+function filteredTopics(){const q=filters.search.toLowerCase().trim();return TOPICS.filter(t=>(filters.subject==='all'||t.track===filters.subject)&&(filters.importance==='all'||t.importance===filters.importance)&&(filters.stage==='all'||t.stage===Number(filters.stage))&&(filters.status==='all'||record(t.id).status===Number(filters.status))&&(!filters.ready||ready(t)&&!demonstrated(t.id))&&(!q||[t.title,t.why,tracks[t.track].name,t.section,...t.outcomes].join(' ').toLowerCase().includes(q)));}
+function option(value,label,selected){return `<option value="${esc(value)}" ${String(value)===String(selected)?'selected':''}>${esc(label)}</option>`;}
+function curriculum(){return `${intro('THE CORE CURRICULUM','Learn the ideas. Connect the pieces.','Start with the core, or use a self-check to skip familiar material. Required depth tells you what you should be able to do.')}
+<div class="filters"><input id="search" type="search" placeholder="Search concepts, skills or materials…" aria-label="Search competencies" value="${esc(filters.search)}"><select id="filter-subject" aria-label="Filter by subject">${option('all','All subjects',filters.subject)}${D.tracks.map(t=>option(t.id,t.name,filters.subject)).join('')}</select><select id="filter-importance" aria-label="Filter by importance">${['Core','Supporting','Specialization','Optional depth','all'].map(v=>option(v,v==='all'?'All importance levels':v,filters.importance)).join('')}</select><select id="filter-status" aria-label="Filter by status">${option('all','All statuses',filters.status)}${statuses.map((s,i)=>option(i,s,filters.status)).join('')}</select><label><input id="filter-ready" type="checkbox" ${filters.ready?'checked':''}> Ready to explore</label></div><div class="filter-summary"><span id="result-summary"></span><button class="text-button" data-action="clear-filters">Clear filters</button></div><div id="curriculum-results"></div>`;}
+function renderResults(){const ts=filteredTopics();document.getElementById('result-summary').textContent=`${ts.length} of ${TOPICS.length} competencies${filters.stage!=='all'?' · Stage '+filters.stage:''} · No topics are locked`;document.getElementById('curriculum-results').innerHTML=ts.length?D.stages.map(s=>{const list=ts.filter(t=>t.stage===s.id);return list.length?`<section class="curriculum-section"><h2><span class="stage-num">0${s.id}</span>${s.title}</h2><p>${s.description}</p>${list.map(topicButton).join('')}</section>`:'';}).join(''):'<div class="empty"><h3>No matching competencies</h3><p>Try another search or include more importance levels.</p><button class="button" data-action="clear-filters">Show all competencies</button></div>';}
+function dependency(id,extra=''){return `<button class="dependency ${demonstrated(id)?'ready':''}" data-topic="${id}">${demonstrated(id)?'✓ ':''}${esc(byId[id].title)}${extra?` <span>${esc(extra)}</span>`:''}</button>`;}
+function mapNode(t){return `<button class="map-node" data-map="${t.id}">${esc(t.title)}<small>${tracks[t.track].name} · ${statuses[record(t.id).status]}</small></button>`;}
+function connections(){const t=byId[currentMap]||byId.m04, downstream=TOPICS.filter(n=>n.requires.includes(t.id)), deepDown=TOPICS.filter(n=>n.deeper.includes(t.id));return `${intro('SEE THE RELATIONSHIPS','Knowledge builds on knowledge.','Focus on one competency to see its immediate prerequisites and the topics it enables. Select a neighboring node to follow the connection.')}
+<label class="micro" for="map-select">FOCUSED COMPETENCY</label><br><select id="map-select" class="map-picker">${D.tracks.map(tr=>`<optgroup label="${tr.name}">${TOPICS.filter(n=>n.track===tr.id).map(n=>option(n.id,n.title,t.id)).join('')}</optgroup>`).join('')}</select>
+<div class="connection-map"><div class="map-col"><h3>Required before starting</h3>${t.requires.length?t.requires.map(id=>mapNode(byId[id])).join(''):'<div class="map-node">A starting point<small>No curriculum prerequisites</small></div>'}</div><div class="map-center"><button class="map-node focus" data-topic="${t.id}" style="width:100%">${esc(t.title)}<small>${tracks[t.track].name} · ${t.importance}<br>Open competency ↗</small></button></div><div class="map-col"><h3>Enables these topics</h3>${downstream.length?downstream.map(mapNode).join(''):'<div class="map-node">Put it into practice<small>No further required links in this edition</small></div>'}</div></div><p class="connection-legend">Arrows show required learning relationships, not a time schedule. Prerequisites guide suggestions; they never block access.</p>
+<div class="guide-grid"><section class="guide-card"><h2>Useful for deeper understanding</h2><p>These topics enrich the selected competency. You can begin without completing them.</p><div class="deeper-list">${t.deeper.length?t.deeper.map(id=>dependency(id)).join(''):'<span class="micro">No additional deepening links for this competency.</span>'}</div></section><section class="guide-card"><h2>Deepens other topics</h2><p>This competency is helpful, but not required to start these topics.</p><div class="deeper-list">${deepDown.length?deepDown.map(n=>dependency(n.id)).join(''):'<span class="micro">No additional outgoing deepening links.</span>'}</div></section></div>`;}
+function materials(){return `${intro('YOUR MATERIALS SHELF','The right resource, at the right moment.','A focused selection from your collection, with official Python, NumPy, pandas and SQL references added. Competency pages tell you exactly which topic to look for.')}
+<div class="note-card" style="margin-bottom:20px"><strong>One main route. Help when you need it.</strong><p>ISLP is the main ML reference. Companion explanations and documentation serve specific questions. This shelf contains the material selected for the core edition, not the entire original resource collection.</p></div>
+<div class="filters"><input id="material-search" type="search" aria-label="Search materials" placeholder="Search resources or their purpose…" value="${esc(materialSearch)}"><select id="material-kind" aria-label="Filter materials by role">${option('all','All resource roles',materialKind)}${[...new Set(Object.values(D.resources).map(r=>r[2]))].map(v=>option(v,v,materialKind)).join('')}</select><label><input id="material-pinned" type="checkbox" ${materialPinned?'checked':''}> My bookmarks</label></div><div class="resource-grid" id="resource-results"></div>`;}
+function renderResources(){const results=Object.entries(D.resources).filter(([id,r])=>(materialKind==='all'||r[2]===materialKind)&&(!materialPinned||bookmarks.includes(id))&&r.join(' ').toLowerCase().includes(materialSearch.toLowerCase()));document.getElementById('resource-results').innerHTML=results.length?results.map(([id,r])=>{const uses=TOPICS.filter(t=>t.resource===id);return `<article class="resource-card"><div class="card-top"><span class="resource-kind">${esc(r[2])}</span><button class="text-button" data-bookmark="${id}" aria-pressed="${bookmarks.includes(id)}">${bookmarks.includes(id)?'★ Saved':'☆ Save'}</button></div><h3>${esc(r[0])}</h3><p>${esc(r[3])}</p><a href="${esc(r[1])}" target="_blank" rel="noopener noreferrer">Open material ↗</a><div class="uses">${uses.length?uses.length+' linked competencies':'Optional companion — use as needed'}</div>${uses.length?`<details><summary class="micro">Show linked competencies</summary><div class="dependencies" style="margin-top:10px">${uses.map(t=>dependency(t.id)).join('')}</div></details>`:''}</article>`;}).join(''):'<div class="empty">No materials match these filters. Try another role or turn off “My bookmarks”.</div>';}
+function guide(){return `${intro('THE LEARNING METHOD','A map, not another obligation.','This curriculum is entirely focused on ML. There are no time targets, deadline reminders, or exam requirements.')}
+<div class="guide-grid"><section class="guide-card"><h2>Start from evidence</h2><ol><li>Choose a competency and try its self-check before reading.</li><li>Use the pinned material only for the gaps you find.</li><li>Complete a practical task and explain your choices.</li><li>Record your status, confidence and evidence.</li><li>Follow a prerequisite link or choose an available next step.</li></ol><p>Worked answer criteria are hidden until you choose to reveal them. This app does not execute or grade your code.</p></section>
+<section class="guide-card"><h2>Importance is not difficulty</h2><p><strong>Core:</strong> needed for reliable ML understanding or practical data work.</p><p><strong>Supporting:</strong> improves depth or helps with common problems; not counted in core completion.</p><p><strong>Specialization:</strong> relevant when you choose a direction.</p><p><strong>Optional depth:</strong> enrichment without blocking the core path.</p><p>SQL is core to building reliable datasets, but it is not a mathematical prerequisite for understanding model algorithms.</p></section>
+<section class="guide-card"><h2>What does “understand” mean?</h2><p><strong>Explain:</strong> describe the idea, assumptions and limitations in your own words.</p><p><strong>Apply:</strong> solve a new example or use the method appropriately.</p><p><strong>Derive:</strong> reproduce the key mathematical steps and justify them.</p><p><strong>Implement:</strong> build the mechanism and check its output.</p><p><strong>Demonstrate:</strong> combine skills independently in inspectable work.</p></section>
+<section class="guide-card"><h2>Status and confidence are separate</h2><p><strong>Not started → Learning → Practiced → Demonstrated.</strong> Mark demonstrated when you can complete a fresh task independently, explain why it works, and identify important limitations.</p><p>Confidence is your own assessment: uncertain, comfortable or confident. It never changes your status automatically.</p><p>Outcome checkboxes are personal notes. Checking every box does not automatically mark a competency as demonstrated.</p></section>
+<section class="guide-card"><h2>How connections work</h2><p><strong>Required:</strong> the intended starting knowledge. A topic becomes a suggested next step once these prerequisites are marked demonstrated.</p><p><strong>Deeper understanding:</strong> useful ideas you can revisit later. They do not delay suggestions.</p><p>Stages provide a sensible route, not a strict sequence. Every topic can be opened at any point.</p><p>The project does not require a neural network. Use the simplest justified method for your question.</p></section>
+<section class="guide-card"><h2>Keep your progress</h2><p>Statuses, confidence, notes, evidence text and bookmarks are saved in <strong>this browser on this device</strong>. They do not automatically sync between devices.</p><p>For local HTML files, browser storage behavior can vary. Keep this file in the same location and export a JSON backup regularly, especially before moving or renaming it, clearing browser data, or changing devices. Import merges recognized topic records after you review the change.</p><div class="button-row"><button class="button primary" data-action="export">↓ Export progress</button><button class="button" data-action="import">↑ Import progress</button></div></section>
+<section class="guide-card"><h2>The core edition</h2><p>${TOPICS.length} competencies across six subjects; ${core.length} count toward the core. Each includes observable learning outcomes, a practical self-check, answer criteria and a pinned resource.</p><p>Coverage is a foundation for further study, not a claim to exhaust all of ML. Neural-network foundations are included; transformers, deployment and deeper theory are expansion branches.</p></section>
+<section class="guide-card"><h2>About the material</h2><p>The curriculum structure, learning tasks and answer criteria are original guidance. Resources are external readings, not endorsements or formal accreditation.</p><p>The curriculum, self-checks and progress tools work offline. External learning materials are links only and require internet access when you choose to open them. Links open in a new tab. Named sections are reading directions, not claims that every link opens directly at that section. Access terms and course interfaces can change.</p><p>A completed resource is not the same as a demonstrated competency. Use your own outputs to make that distinction visible.</p></section></div>`;}
+function detail(id){const t=byId[id],r=record(id),res=D.resources[t.resource],down=TOPICS.filter(n=>n.requires.includes(id));return `<div class="detail-header"><button class="close" data-action="close-topic" aria-label="Close competency">×</button><div class="detail-meta"><span>${tracks[t.track].name.toUpperCase()}</span><span> / </span>${badge(t.importance)}</div><h2 id="topic-title">${esc(t.title)}</h2><p>${esc(t.why)}</p><div class="detail-meta" style="margin-top:15px">REQUIRED DEPTH <strong>${esc(t.depth)}</strong></div></div><div class="detail-body">
+<section class="detail-section"><h3>Required before starting</h3><div class="dependencies">${t.requires.length?t.requires.map(id=>dependency(id,statuses[record(id).status])).join(''):'<span class="micro">No prerequisites in this curriculum. Start with the self-check.</span>'}</div>${t.deeper.length?`<p class="micro">Useful for deeper understanding — not required to begin</p><div class="dependencies">${t.deeper.map(id=>dependency(id)).join('')}</div>`:''}</section>
+<section class="detail-section"><h3>I can…</h3><ul class="outcomes">${t.outcomes.map((o,i)=>`<li><label><input type="checkbox" data-outcome="${i}" ${r.checks[i]?'checked':''}><span>${esc(o)}</span></label></li>`).join('')}</ul><p class="micro">Checking outcomes does not automatically change your status.</p></section>
+<section class="detail-section task"><h3>TRY IT BEFORE YOU READ</h3><p>${esc(t.task)}</p><details><summary>Reveal answer criteria</summary><p>${esc(t.answer)}</p><p class="micro">Use these criteria to assess your explanation. This is a self-check, not automated grading.</p></details></section>
+<section class="detail-section"><h3>Pinned material</h3><div class="resource-pin"><span class="resource-kind">${esc(res[2])}</span><br><a href="${esc(res[1])}" target="_blank" rel="noopener noreferrer">${esc(res[0])} ↗</a><p><strong>Focus on:</strong> ${esc(t.section)}</p><p class="micro">${esc(res[3])}</p></div>${t.track==='ml'&&t.resource==='islp'?'<p class="micro">Need another explanation? <a href="https://statquest.org/" target="_blank" rel="noopener noreferrer">StatQuest ↗</a> or <a href="https://mlu-explain.github.io/" target="_blank" rel="noopener noreferrer">MLU-Explain ↗</a></p>':''}</section>
+<section class="detail-section"><h3>Your understanding</h3><div class="progress-controls"><label for="topic-status">Learning status<select id="topic-status">${statuses.map((s,i)=>option(i,s,r.status)).join('')}</select></label><label for="topic-confidence">Confidence<select id="topic-confidence">${confidence.map((s,i)=>option(i,s,r.confidence)).join('')}</select></label></div>${r.status===3&&r.confidence===1?'<div class="review-note">Demonstrated, but still uncertain: a useful topic to revisit with a fresh example.</div>':''}<p class="micro">Demonstrated = solve a fresh task independently, explain your reasoning, and identify limitations.</p><label class="note-label" for="topic-notes">Notes & questions<textarea id="topic-notes" maxlength="20000" placeholder="What clicked? What needs another example?">${esc(r.notes)}</textarea></label><label class="note-label" for="topic-evidence">Evidence of understanding<input class="evidence-input" id="topic-evidence" maxlength="4000" value="${esc(r.evidence)}" placeholder="Notebook URL, file name, or a brief description of your result"></label></section>
+${down.length?`<section class="detail-section"><h3>Builds toward</h3><div class="dependencies">${down.map(n=>dependency(n.id)).join('')}</div></section>`:''}<div class="detail-bottom"><span class="save-note">${storageOK?'Changes save automatically in this browser':'In memory only — export a backup'}</span><button class="button" data-show-map="${id}">See connections ↗</button></div></div>`;}
+function openTopic(id){if(!byId[id])return;activeTopic=id;const dialog=document.getElementById('topic-dialog');document.getElementById('topic-detail').innerHTML=detail(id);if(!dialog.open)dialog.showModal();dialog.scrollTop=0;dialog.querySelector('.close').focus();}
+function closeTopic(){const dialog=document.getElementById('topic-dialog');if(dialog.open)dialog.close();activeTopic=null;const [view,query='']=location.hash.slice(1).split('?');const params=new URLSearchParams(query);if(params.has('topic')){params.delete('topic');history.replaceState(null,'','#'+(view||'overview')+(params.size?'?'+params.toString():''));}renderMain();}
+function goTopic(id){const [view,query='']=location.hash.slice(1).split('?');const params=new URLSearchParams(query);params.set('topic',id);location.hash=(view||'overview')+'?'+params.toString();}
+function renderMain(){document.getElementById('breadcrumb').textContent=currentView.toUpperCase();document.querySelectorAll('#nav a').forEach(a=>a.classList.toggle('active',a.dataset.view===currentView));const main=document.getElementById('main');main.innerHTML=({overview,curriculum,connections,materials,guide}[currentView]||overview)();if(currentView==='curriculum')renderResults();if(currentView==='materials')renderResources();}
+function route(){const [view,query='']=location.hash.slice(1).split('?');const params=new URLSearchParams(query),newView=['overview','curriculum','connections','materials','guide'].includes(view)?view:'overview';const changed=newView!==currentView;currentView=newView;
+ if(params.has('subject')&&tracks[params.get('subject')])filters.subject=params.get('subject');
+ if(params.has('stage')&&D.stages.some(s=>String(s.id)===params.get('stage')))filters.stage=params.get('stage');
+ if(params.has('focus')&&byId[params.get('focus')])currentMap=params.get('focus');
+ renderMain();if(params.has('topic')&&byId[params.get('topic')])openTopic(params.get('topic'));else{const dialog=document.getElementById('topic-dialog');if(dialog.open)dialog.close();activeTopic=null;}
+ if(changed)window.scrollTo({top:0,behavior:'instant'});
+}
+function goSubject(id){filters={search:'',subject:id,importance:'Core',status:'all',ready:false,stage:'all'};location.hash='curriculum?subject='+id;if(currentView==='curriculum')route();}
+function exportProgress(){const blob=new Blob([JSON.stringify({schema:'ml-atlas-progress',version:1,curriculumVersion:D.version,topics:progress,bookmarks},null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='ml-atlas-progress.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);notify('Progress backup downloaded.');}
+function prepareImport(text){const p=JSON.parse(text);if(p.schema!=='ml-atlas-progress'||p.version!==1)throw Error('Choose an ML Atlas version 1 progress backup.');const topics=validateRecords(p.topics),n=Object.keys(topics).length;const pins=Array.isArray(p.bookmarks)?p.bookmarks.filter(k=>typeof k==='string'&&D.resources[k]):[];if(!n&&!pins.length)throw Error('This backup contains no recognized topic records or bookmarks.');return {topics,bookmarks:pins,ignored:Object.keys(p.topics).length-n};}
+document.addEventListener('click',e=>{const topic=e.target.closest('[data-topic]');if(topic){goTopic(topic.dataset.topic);return;}
+ const subj=e.target.closest('[data-subject]');if(subj){goSubject(subj.dataset.subject);return;}
+ const stage=e.target.closest('[data-stage]');if(stage){filters={search:'',subject:'all',importance:'Core',status:'all',ready:false,stage:stage.dataset.stage};location.hash='curriculum?stage='+stage.dataset.stage;return;}
+ const map=e.target.closest('[data-map]');if(map){currentMap=map.dataset.map;location.hash='connections?focus='+currentMap;return;}
+ const showMap=e.target.closest('[data-show-map]');if(showMap){currentMap=showMap.dataset.showMap;location.hash='connections?focus='+currentMap;return;}
+ const bookmark=e.target.closest('[data-bookmark]');if(bookmark){const id=bookmark.dataset.bookmark;bookmarks=bookmarks.includes(id)?bookmarks.filter(v=>v!==id):[...bookmarks,id];persist();renderResources();return;}
+ const action=e.target.closest('[data-action]')?.dataset.action;if(!action)return;
+ if(action==='close-topic')closeTopic();
+ if(action==='clear-filters'){filters={search:'',subject:'all',importance:'all',status:'all',ready:false,stage:'all'};history.replaceState(null,'','#curriculum');renderMain();}
+ if(action==='export')exportProgress();
+ if(action==='import')document.getElementById('import-file').click();
+ if(action==='cancel-import'){pendingImport=null;document.getElementById('import-dialog').close();}
+ if(action==='confirm-import'&&pendingImport){progress={...progress,...pendingImport.topics};bookmarks=[...new Set([...bookmarks,...pendingImport.bookmarks])];const n=Object.keys(pendingImport.topics).length;pendingImport=null;document.getElementById('import-dialog').close();persist();renderMain();notify(`${n} topic records imported${storageOK?' and saved.':'. Export before leaving; browser storage is unavailable.'}`);}
+});
+document.addEventListener('input',e=>{
+ if(e.target.id==='search'){filters.search=e.target.value;renderResults();}
+ if(e.target.id==='material-search'){materialSearch=e.target.value;renderResources();}
+ if(e.target.id==='topic-notes'&&activeTopic)updateRecord(activeTopic,'notes',e.target.value);
+ if(e.target.id==='topic-evidence'&&activeTopic)updateRecord(activeTopic,'evidence',e.target.value);
+});
+document.addEventListener('change',async e=>{
+ const id=e.target.id;
+ if(id==='filter-subject'){filters.subject=e.target.value;history.replaceState(null,'','#curriculum');renderResults();}
+ if(id==='filter-importance'){filters.importance=e.target.value;renderResults();}
+ if(id==='filter-status'){filters.status=e.target.value;renderResults();}
+ if(id==='filter-ready'){filters.ready=e.target.checked;renderResults();}
+ if(id==='map-select'){currentMap=e.target.value;location.hash='connections?focus='+currentMap;}
+ if(id==='material-kind'){materialKind=e.target.value;renderResources();}
+ if(id==='material-pinned'){materialPinned=e.target.checked;renderResources();}
+ if(id==='topic-status'&&activeTopic)updateRecord(activeTopic,'status',Number(e.target.value));
+ if(id==='topic-confidence'&&activeTopic)updateRecord(activeTopic,'confidence',Number(e.target.value));
+ if(e.target.dataset.outcome!==undefined&&activeTopic){const checks=[...record(activeTopic).checks];checks[Number(e.target.dataset.outcome)]=e.target.checked;updateRecord(activeTopic,'checks',checks);}
+ if(id==='import-file'){try{const file=e.target.files[0];if(!file)return;if(file.size>2_000_000)throw Error('This backup is too large. Choose a progress JSON file under 2 MB.');pendingImport=prepareImport(await file.text());document.getElementById('import-summary').textContent=`${Object.keys(pendingImport.topics).length} recognized topic records and ${pendingImport.bookmarks.length} bookmarks.${pendingImport.ignored?' '+pendingImport.ignored+' unknown topic IDs will be skipped.':''}`;document.getElementById('import-dialog').showModal();}catch(err){pendingImport=null;notify('Import failed: '+err.message);}finally{e.target.value='';}}
+});
+document.getElementById('topic-dialog').addEventListener('cancel',e=>{e.preventDefault();closeTopic();});
+document.getElementById('topic-dialog').addEventListener('click',e=>{if(e.target.id==='topic-dialog'){const r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeTopic();}});
+document.getElementById('import-dialog').addEventListener('cancel',()=>{pendingImport=null;});
+document.getElementById('topic-count').textContent=TOPICS.length;
+document.getElementById('subject-nav').innerHTML=D.tracks.map(t=>`<button class="subject-link" data-subject="${t.id}" style="--color:${t.color}"><span class="dot"></span>${t.name}</button>`).join('');
+window.addEventListener('hashchange',route);route();
+// Export pure logic for the non-browser validation harness, without changing the app's UI.
+window.MLAtlas={validateRecords,prepareImport,filteredTopics,ready,byId};
+</script>
+</body></html>

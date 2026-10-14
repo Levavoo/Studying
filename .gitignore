@@ -1,0 +1,11 @@
+# Local progress exports
+ml-atlas-progress*.json
+progress-backups/
+# Local Python environments and notebook state
+.venv/
+venv/
+__pycache__/
+.ipynb_checkpoints/
+# OS metadata
+.DS_Store
+Thumbs.db
